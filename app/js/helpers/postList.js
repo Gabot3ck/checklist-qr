@@ -36,28 +36,31 @@ d.addEventListener("DOMContentLoaded", () => {
                 tr.innerHTML = 
                     `<tr>
                         <td>${el.fecha}</td>
-                        <td>${el.camion}</td>
+                        <td>${el.camion.nombre}</td>
                         <td>
                             <button  type="button" class="btn btn-info" id=${el.id} data-bs-toggle="modal" data-bs-target="#Modal${index}">
                                 <i class="bi bi-eye-fill"></i>
                             </button>
                         </td>
                     </tr>
-                    <div class="modal fade" id="Modal${index}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+
+                    <div class="modal fade" id="Modal${index}" data-bs-backdrop="static" tabindex="-1" aria-labelledby="Modal mostrando los registros" aria-hidden="true">
                         <div class="modal-dialog">
                             <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                                Mi id es: ${el.id}
-                                Bocina: ${el.bocina}
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                <button type="button" class="btn btn-primary">Save changes</button>
-                            </div>
+                                <div class="modal-header py-2">
+                                    <h5 class="modal-title" >Información del checklist</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+
+                                <div class="modal-body">
+                                    Mi id es: ${el.camion.nombre}
+                                    Bocina: ${el.bocina}
+                                </div>
+                                
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                </div>
                             </div>
                         </div>
                     </div>`;

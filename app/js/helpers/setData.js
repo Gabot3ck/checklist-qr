@@ -1,5 +1,6 @@
-import { collection, doc, setDoc} from "https://www.gstatic.com/firebasejs/9.14.0/firebase-firestore.js";
+import { collection, doc, setDoc, onSnapshot, query, where} from "https://www.gstatic.com/firebasejs/9.14.0/firebase-firestore.js";
 import { db } from "../db/firebase.js";
+
 
 
 export const setData = () => {
@@ -17,7 +18,6 @@ export const setData = () => {
     ;
 
     const registro = {
-        camion: camion,
         odometro: odometro,
         proyecto: proyecto,
         documentacion: documentacion,
@@ -29,11 +29,24 @@ export const setData = () => {
 
         const fecha = moment().format('DD-MM-YYYY hh:mm:ss a');
 
-        const nuevoRegistro = doc(collection(db, "registros"));
-        setDoc(nuevoRegistro, {...registro, fecha:fecha});
+        
+        
+        const q = query(collection(db, "camiones"), where("nombre", "==", camion));
+        const docs = [];
+
+        onSnapshot(q, (querySnapshot) => {
+            querySnapshot.forEach((doc) => {
+                docs.push({...doc.data()});
+            });
+
+            const data = docs[0];
+
+            const nuevoRegistro = doc(collection(db, "registros"));
+
+            setDoc(nuevoRegistro, {...registro, fecha:fecha, camion:data});
+        });
 
         form.reset();
-
     })
     
 }
