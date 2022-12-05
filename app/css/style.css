@@ -1,0 +1,108 @@
+/*TODO    V A R I A B L E S    */
+*{
+    --color-principal: #65C400;
+    --color-secundario: #DDDEDC;
+    --color-texto: #494949;
+}
+
+
+/*TODO    F O R M A T E O    */
+html{
+	box-sizing: border-box;
+	font-size: 16px;
+}
+
+*,
+::after,
+::before{
+	box-sizing: inherit;
+}
+body{
+    
+	margin: 0 auto;
+	padding: 0;
+	width: 100%;
+	min-height: 100vh;
+	background: var(--color-principal);
+	text-rendering: optimizeSpeed;
+	scroll-behavior: smooth;
+	-webkit-text-size-adjust: 100%;
+}
+a{
+	text-decoration: none;
+}
+li{
+	list-style: none;
+}
+.wrapper{
+    width: clamp(320px,100%,768px);
+}
+
+/*TODO    H E A D E R    */
+.wrapper_header{
+	width: 100%;
+    height: 70px;
+}
+.wrapper_header .header{
+    position: fixed;
+	top:0;
+	z-index: 999;
+    height: 70px;
+    background-color: darkviolet;
+}
+.wrapper_header .header img{
+    width: 60px;
+    height: 60px;
+}
+
+/*TODO    F O R M    S E G U R I D A D    */
+.form_seguridad{
+    width: 90%;
+    height: calc(100vh - 70px);
+    background-color: brown;
+}
+
+/*TODO    F O R M    L U C E S    */
+.form_luces{
+    width: 90%;
+    height: 100vh;
+    background-color: rgb(236, 102, 13);
+}
+
+
+/*TODO     A U T E N T I C A C I Ó N      */
+.wrapperLogin{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-secundario);
+}
+.wrapperLogin .form-label{
+    font-style: "Montserrat";
+    font-weight: 600;
+    color: var(--color-texto);
+}
+.login{
+    margin: 0 auto;
+    min-width: 360px;
+    width: 50vw;
+    max-width: 400px;
+    height: 600px;
+    gap: 3rem;
+}
+
+.logo_login{
+    width: clamp(30%, 80px, 450px);
+    height: 20%;
+}
+.form_login{
+    padding: .8rem;
+    width: 80%;
+    max-width: 380px;
+    height: 50%;
+    border-radius: 15px;
+    background-color:  var(--color-principal);
+}
+
