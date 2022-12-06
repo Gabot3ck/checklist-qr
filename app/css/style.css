@@ -62,13 +62,19 @@ li{
     background-color: brown;
 }
 
-/*TODO    F O R M    L U C E S    */
+/*TODO    F O R M    S E G U R I D A D    */
 .form_seguridad{
     width: 90%;
     height: 100vh;
     background-color: rgb(236, 102, 13);
 }
 
+/*TODO    F O R M    L U C E S    */
+.form_luces{
+    width: 90%;
+    height: 100vh;
+    background-color: rgb(160, 30, 21);
+}
 
 /*TODO     A U T E N T I C A C I Ó N      */
 .wrapperLogin{
