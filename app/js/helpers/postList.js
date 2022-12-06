@@ -38,7 +38,7 @@ d.addEventListener("DOMContentLoaded", () => {
                         <td>${el.fecha}</td>
                         <td>${el.camion.nombre}</td>
                         <td>
-                            <button  type="button" class="btn btn-info" id=${el.id} data-bs-toggle="modal" data-bs-target="#Modal${index}">
+                            <button  type="button" class="btn btn-info"  data-bs-toggle="modal" data-bs-target="#Modal${index}">
                                 <i class="bi bi-eye-fill"></i>
                             </button>
                         </td>
@@ -52,21 +52,25 @@ d.addEventListener("DOMContentLoaded", () => {
                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
 
-                                <div class="modal-body">
+                                <div class="modal-body" id="${index}">
                                     Mi id es: ${el.camion.nombre}
                                     Bocina: ${el.bocina}
                                 </div>
                                 
                                 <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                    <button type="button" class="btn btn-primary" id=${el.id}>
+                                        Descargar<i class="bi bi-filetype-pdf ms-2 fs-5"></i>
+                                    </button>
                                 </div>
                             </div>
                         </div>
                     </div>`;
                 table.appendChild(tr);
 
-                showModal(el.id);
+                let filename = `${el.camion.nombre}-${el.fecha}`;
+
+                showModal(el.id, index, filename);
             })
         });
     }

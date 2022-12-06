@@ -1,4 +1,4 @@
-export const showModal = (id) => {
+export const showModal = (id, index, filename) => {
 
     const d = document;
     const btn = d.getElementById(id);
@@ -6,26 +6,29 @@ export const showModal = (id) => {
 
 
     btn.addEventListener("click", () => {
-        // const modal = d.getElementById("exampleModal");
-        // const modalDialog = d.createElement("div");
-        // modalDialog.classList.add("modal-dialog");
+        const $elementPrint = d.getElementById(index);
 
-        // modalDialog.innerHTML =
-        //     `<div class="modal-content">
-        //         <div class="modal-header">
-        //             <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-        //             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        //         </div>
-        //         <div class="modal-body">
-        //             ...
-        //         </div>
-        //         <div class="modal-footer">
-        //             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        //             <button type="button" class="btn btn-primary">Save changes</button>
-        //         </div>
-        //     </div>`;
-
-        // modal.appendChild(modalDialog);
+        html2pdf()
+            .set({
+                margin: 1,
+                filename: filename,
+                image: {
+                    type: "jpeg",
+                    quality: 0.98,
+                },
+                html2canvas: {
+                    scale: 3,
+                    letterRendering: true,
+                },
+                jsPDF: {
+                    unit: "in",
+                    format: "a4",
+                    orientation: "portrait"
+                }
+            })
+            .from($elementPrint)
+            .save()
+            .catch(error => console.log(error));
     });
 }
 
