@@ -535,179 +535,324 @@
                 </div>
             </section>
 <!--todo *-*-*-*-*-*-*-*-*-*     F  I  N        S I S T E M A    D E     L U C E S   *-*-*-*-*-*-*-*-*-*-->
-        </form>
-    </main>
+        
 
 <!--todo *-*-*-*-*-*-*-*-*-*     N E U M Á T I C O S    *-*-*-*-*-*-*-*-*-*-->
-    <section class="form_neumaticos d-flex flex-column justify-content-evenly mx-auto" id="neumaticos">
+            <section class="form_neumaticos d-flex flex-column justify-content-evenly mx-auto" id="neumaticos">
 
-<!--?       ********    Neumático auxiliar ******** -->
+        <!--?       ********    Neumático auxiliar ******** -->
+                <div class="col-md-10 mx-auto  form-check  ">
+                    <p class="m-0">Neumático auxiliar:</p>
+                    <div class="d-flex w-100 gap-2">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="neumaticoAuxiliar" id="neumaticoAuxiliarB" value="Bueno">
+                            <label class="form-check-label" for="neumaticoAuxiliarB">
+                                Bueno
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="neumaticoAuxiliar" id="neumaticoAuxiliarM" value="Malo">
+                            <label class="form-check-label" for="neumaticoAuxiliarM">
+                                Malo
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="neumaticoAuxiliar" id="neumaticoAuxiliarNA" value="N/A">
+                            <label class="form-check-label" for="neumaticoAuxiliarNA">
+                                No aplica
+                            </label>
+                        </div>
+                    </div>
+                </div>
+        <!--?       ********  Fin   Neumático auxiliar    ******** -->
+
+        <!--?       ********    Neumáticos delanteros ******** -->
         <div class="col-md-10 mx-auto  form-check  ">
-            <p class="m-0">Neumático auxiliar:</p>
+            <p class="m-0">Neumáticos delanteros:</p>
             <div class="d-flex w-100 gap-2">
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="neumaticoAuxiliar" id="neumaticoAuxiliarB" value="Bueno">
-                    <label class="form-check-label" for="neumaticoAuxiliarB">
+                    <input class="form-check-input" type="radio" name="neumaticosDelanteros" id="neumaticosDelanterosB" value="Bueno">
+                    <label class="form-check-label" for="neumaticosDelanterosB">
                         Bueno
                     </label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="neumaticoAuxiliar" id="neumaticoAuxiliarM" value="Malo">
-                    <label class="form-check-label" for="neumaticoAuxiliarM">
+                    <input class="form-check-input" type="radio" name="neumaticosDelanteros" id="neumaticosDelanterosM" value="Malo">
+                    <label class="form-check-label" for="neumaticosDelanterosM">
                         Malo
                     </label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="neumaticoAuxiliar" id="neumaticoAuxiliarNA" value="N/A">
-                    <label class="form-check-label" for="neumaticoAuxiliarNA">
+                    <input class="form-check-input" type="radio" name="neumaticosDelanteros" id="neumaticosDelanterosNA" value="N/A">
+                    <label class="form-check-label" for="neumaticosDelanterosNA">
                         No aplica
                     </label>
                 </div>
             </div>
         </div>
-<!--?       ********  Fin   Neumático auxiliar    ******** -->
-
-<!--?       ********    Neumáticos delanteros ******** -->
-<div class="col-md-10 mx-auto  form-check  ">
-    <p class="m-0">Neumáticos delanteros:</p>
-    <div class="d-flex w-100 gap-2">
-        <div class="form-check">
-            <input class="form-check-input" type="radio" name="neumaticosDelanteros" id="neumaticosDelanterosB" value="Bueno">
-            <label class="form-check-label" for="neumaticosDelanterosB">
-                Bueno
-            </label>
-        </div>
-        <div class="form-check">
-            <input class="form-check-input" type="radio" name="neumaticosDelanteros" id="neumaticosDelanterosM" value="Malo">
-            <label class="form-check-label" for="neumaticosDelanterosM">
-                Malo
-            </label>
-        </div>
-        <div class="form-check">
-            <input class="form-check-input" type="radio" name="neumaticosDelanteros" id="neumaticosDelanterosNA" value="N/A">
-            <label class="form-check-label" for="neumaticosDelanterosNA">
-                No aplica
-            </label>
-        </div>
-    </div>
-</div>
-<!--?       ********  Fin   Neumáticos delanteros    ******** -->
+        <!--?       ********  Fin   Neumáticos delanteros    ******** -->
 
 
-<!--?       ********    Neumáticos posteriores ******** -->
-        <div class="col-md-10 mx-auto  form-check  ">
-            <p class="m-0">Neumáticos posteriores:</p>
-            <div class="d-flex w-100 gap-2">
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="neumaticosPosteriores" id="neumaticosPosterioresB" value="Bueno">
-                    <label class="form-check-label" for="neumaticosPosterioresB">
-                        Bueno
-                    </label>
+        <!--?       ********    Neumáticos posteriores ******** -->
+                <div class="col-md-10 mx-auto  form-check  ">
+                    <p class="m-0">Neumáticos posteriores:</p>
+                    <div class="d-flex w-100 gap-2">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="neumaticosPosteriores" id="neumaticosPosterioresB" value="Bueno">
+                            <label class="form-check-label" for="neumaticosPosterioresB">
+                                Bueno
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="neumaticosPosteriores" id="neumaticosPosterioresM" value="Malo">
+                            <label class="form-check-label" for="neumaticosPosterioresM">
+                                Malo
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="neumaticosPosteriores" id="neumaticosPosterioresNA" value="N/A">
+                            <label class="form-check-label" for="neumaticosPosterioresNA">
+                                No aplica
+                            </label>
+                        </div>
+                    </div>
                 </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="neumaticosPosteriores" id="neumaticosPosterioresM" value="Malo">
-                    <label class="form-check-label" for="neumaticosPosterioresM">
-                        Malo
-                    </label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="neumaticosPosteriores" id="neumaticosPosterioresNA" value="N/A">
-                    <label class="form-check-label" for="neumaticosPosterioresNA">
-                        No aplica
-                    </label>
-                </div>
-            </div>
-        </div>
-<!--?       ********  Fin   Neumáticos posteriores    ******** -->
+        <!--?       ********  Fin   Neumáticos posteriores    ******** -->
 
-<!--?       ********    Gata y llaves de rueda ******** -->
-        <div class="col-md-10 mx-auto  form-check  ">
-            <p class="m-0">Gata y llaves de rueda:</p>
-            <div class="d-flex w-100 gap-2">
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="gata" id="amortiguadorB" value="Bueno">
-                    <label class="form-check-label" for="gataB">
-                        Bueno
-                    </label>
+        <!--?       ********    Gata y llaves de rueda ******** -->
+                <div class="col-md-10 mx-auto  form-check  ">
+                    <p class="m-0">Gata y llaves de rueda:</p>
+                    <div class="d-flex w-100 gap-2">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="gata" id="amortiguadorB" value="Bueno">
+                            <label class="form-check-label" for="gataB">
+                                Bueno
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="gata" id="gataM" value="Malo">
+                            <label class="form-check-label" for="gataM">
+                                Malo
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="gata" id="gataNA" value="N/A">
+                            <label class="form-check-label" for="gataNA">
+                                No aplica
+                            </label>
+                        </div>
+                    </div>
                 </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="gata" id="gataM" value="Malo">
-                    <label class="form-check-label" for="gataM">
-                        Malo
-                    </label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="gata" id="gataNA" value="N/A">
-                    <label class="form-check-label" for="gataNA">
-                        No aplica
-                    </label>
-                </div>
-            </div>
-        </div>
-<!--?       ********  Fin   Gata y llaves de rueda    ******** -->
+        <!--?       ********  Fin   Gata y llaves de rueda    ******** -->
 
-<!--?       ********    Amortiguadores delanteros ******** -->
-        <div class="col-md-10 mx-auto  form-check  ">
-            <p class="m-0">Amortiguadores delanteros:</p>
-            <div class="d-flex w-100 gap-2">
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="amortiguador" id="amortiguadorB" value="Bueno">
-                    <label class="form-check-label" for="amortiguadorB">
-                        Bueno
-                    </label>
+        <!--?       ********    Amortiguadores delanteros ******** -->
+                <div class="col-md-10 mx-auto  form-check  ">
+                    <p class="m-0">Amortiguadores delanteros:</p>
+                    <div class="d-flex w-100 gap-2">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="amortiguador" id="amortiguadorB" value="Bueno">
+                            <label class="form-check-label" for="amortiguadorB">
+                                Bueno
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="amortiguador" id="amortiguadorM" value="Malo">
+                            <label class="form-check-label" for="amortiguadorM">
+                                Malo
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="amortiguador" id="amortiguadorNA" value="N/A">
+                            <label class="form-check-label" for="amortiguadorNA">
+                                No aplica
+                            </label>
+                        </div>
+                    </div>
                 </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="amortiguador" id="amortiguadorM" value="Malo">
-                    <label class="form-check-label" for="amortiguadorM">
-                        Malo
-                    </label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="amortiguador" id="amortiguadorNA" value="N/A">
-                    <label class="form-check-label" for="amortiguadorNA">
-                        No aplica
-                    </label>
-                </div>
-            </div>
-        </div>
-<!--?       ********  Fin   Amortiguadores delanteros    ******** -->
+        <!--?       ********  Fin   Amortiguadores delanteros    ******** -->
 
-<!--?       ********    Paquetes delanteros ******** -->
-        <div class="col-md-10 mx-auto  form-check  ">
-            <p class="m-0">Paquetes delanteros:</p>
-            <div class="d-flex w-100 gap-2">
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="paquetes" id="paquetesB" value="Bueno">
-                    <label class="form-check-label" for="paquetesB">
-                        Bueno
-                    </label>
+        <!--?       ********    Paquetes delanteros ******** -->
+                <div class="col-md-10 mx-auto  form-check  ">
+                    <p class="m-0">Paquetes delanteros:</p>
+                    <div class="d-flex w-100 gap-2">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="paquetes" id="paquetesB" value="Bueno">
+                            <label class="form-check-label" for="paquetesB">
+                                Bueno
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="paquetes" id="paquetesM" value="Malo">
+                            <label class="form-check-label" for="paquetesM">
+                                Malo
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="paquetes" id="paquetesNA" value="N/A">
+                            <label class="form-check-label" for="paquetesNA">
+                                No aplica
+                            </label>
+                        </div>
+                    </div>
                 </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="paquetes" id="paquetesM" value="Malo">
-                    <label class="form-check-label" for="paquetesM">
-                        Malo
-                    </label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="paquetes" id="paquetesNA" value="N/A">
-                    <label class="form-check-label" for="paquetesNA">
-                        No aplica
-                    </label>
-                </div>
-            </div>
-        </div>
-<!--?       ********  Fin   Paquetes delanteros    ******** -->
+        <!--?       ********  Fin   Paquetes delanteros    ******** -->
 
 
-        <div class="col-md-10 mx-auto text-center">
-            <a class="btn btn-warning" href="#luces">Atrás</a>
-            <a class="btn btn-warning" href="#niveles" >Siguiente</a>
-            <a class="btn btn-warning" href="./docs.html">Ver resgistros</a>
-            <button class="btn btn-success"  id="enviarData">Enviar</button>
-        </div>
-    </section>
+                <div class="col-md-10 mx-auto text-center">
+                    <a class="btn btn-warning" href="#luces">Atrás</a>
+                    <a class="btn btn-warning" href="#niveles" >Siguiente</a>
+                    <a class="btn btn-warning" href="./docs.html">Ver resgistros</a>
+                    <button class="btn btn-success"  id="enviarData">Enviar</button>
+                </div>
+            </section>
 <!--todo *-*-*-*-*-*-*-*-*-*  F  I  N     N E U M Á T I C O S     *-*-*-*-*-*-*-*-*-*-->
 
+
+<!--todo *-*-*-*-*-*-*-*-*-*     N I V E L E S    *-*-*-*-*-*-*-*-*-*-->
+            <section class="form_niveles d-flex flex-column justify-content-evenly mx-auto" id="niveles">
+
+<!--?       ********    Aceite de motor ******** -->
+                <div class="col-md-10 mx-auto  form-check  ">
+                    <p class="m-0">Aceite de motor:</p>
+                    <div class="d-flex w-100 gap-2">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="aceiteMotor" id="aceiteMotorB" value="Bueno">
+                            <label class="form-check-label" for="aceiteMotorB">
+                                Bueno
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="aceiteMotor" id="aceiteMotorM" value="Malo">
+                            <label class="form-check-label" for="aceiteMotorM">
+                                Malo
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="aceiteMotor" id="aceiteMotorNA" value="N/A">
+                            <label class="form-check-label" for="aceiteMotorNA">
+                                No aplica
+                            </label>
+                        </div>
+                    </div>
+                </div>
+<!--?       ********  Fin   Aceite de motor    ******** -->
+
+<!--?       ********    Líquido de frenos ******** -->
+                <div class="col-md-10 mx-auto  form-check  ">
+                    <p class="m-0">Líquido de frenos:</p>
+                    <div class="d-flex w-100 gap-2">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="aguaRadiador" id="liquidoFrenosB" value="Bueno">
+                            <label class="form-check-label" for="liquidoFrenosB">
+                                Bueno
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="liquidoFrenos" id="liquidoFrenosM" value="Malo">
+                            <label class="form-check-label" for="liquidoFrenosM">
+                                Malo
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="liquidoFrenos" id="liquidoFrenosNA" value="N/A">
+                            <label class="form-check-label" for="liquidoFrenosNA">
+                                No aplica
+                            </label>
+                        </div>
+                    </div>
+                </div>
+<!--?       ********  Fin   Líquido de frenos    ******** -->
+
+<!--?       ********    Agua del radiador ******** -->
+                <div class="col-md-10 mx-auto  form-check  ">
+                    <p class="m-0">Agua del radiador:</p>
+                    <div class="d-flex w-100 gap-2">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="aguaRadiador" id="aguaRadiadorB" value="Bueno">
+                            <label class="form-check-label" for="aguaRadiadorB">
+                                Bueno
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="aguaRadiador" id="aguaRadiadorM" value="Malo">
+                            <label class="form-check-label" for="aguaRadiadorM">
+                                Malo
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="aguaRadiador" id="aguaRadiadorNA" value="N/A">
+                            <label class="form-check-label" for="aguaRadiadorNA">
+                                No aplica
+                            </label>
+                        </div>
+                    </div>
+                </div>
+<!--?       ********  Fin   Agua del radiador    ******** -->
+
+<!--?       ********    Agua limpia parabrisas ******** -->
+                <div class="col-md-10 mx-auto  form-check  ">
+                    <p class="m-0">Agua limpia parabrisas:</p>
+                    <div class="d-flex w-100 gap-2">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="limpiaParabrisas" id="limpiaParabrisasB" value="Bueno">
+                            <label class="form-check-label" for="limpiaParabrisasB">
+                                Bueno
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="limpiaParabrisas" id="limpiaParabrisasM" value="Malo">
+                            <label class="form-check-label" for="limpiaParabrisasM">
+                                Malo
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="limpiaParabrisas" id="limpiaParabrisasNA" value="N/A">
+                            <label class="form-check-label" for="limpiaParabrisasNA">
+                                No aplica
+                            </label>
+                        </div>
+                    </div>
+                </div>
+<!--?       ********  Fin   Agua limpia parabrisas    ******** -->
+
+<!--?       ********    Aceite de corona ******** -->
+                <div class="col-md-10 mx-auto  form-check  ">
+                    <p class="m-0">Aceite de corona:</p>
+                    <div class="d-flex w-100 gap-2">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="aceiteCorona" id="aceiteCoronaB" value="Bueno">
+                            <label class="form-check-label" for="aceiteCoronaB" >
+                                Bueno
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="aceiteCorona" id="aceiteCoronaM" value="Malo">
+                            <label class="form-check-label" for="aceiteCoronaM">
+                                Malo
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="aceiteCorona" id="aceiteCoronaNA" value="N/A">
+                            <label class="form-check-label" for="aceiteCoronaNA">
+                                No aplica
+                            </label>
+                        </div>
+                    </div>
+                </div>
+<!--?       ********  Fin   Aceite de corona    ******** -->
+                
+                
+                <div class="col-md-10 mx-auto text-center">
+                    <a class="btn btn-warning" href="#neumaticos">Atrás</a>
+                    <a class="btn btn-warning" href="#carroceria" >Siguiente</a>
+                </div>
+            </section>
+<!--todo *-*-*-*-*-*-*-*-*-*   F  I  N       N I V E L E S    *-*-*-*-*-*-*-*-*-*-->
+
+
+
+        </form>
+    </main>
     <!--?     Bootstrap 5 -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" 
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" 
