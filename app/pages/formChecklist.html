@@ -33,14 +33,10 @@
                     <label class="form-label">Eliga un camión:</label>
                     <select 
                         class="form-select" 
-                        id="IDCamion" 
+                        id="patenteCamion" 
                         name="camion"
                         >
                         <option value="">Seleccione</option>
-                        <option value="Camión 1">Camión 1</option>
-                        <option value="Camión 2">Camión 2</option>
-                        <option value="Camión 3">Camión 3</option>
-                        <option value="Camión 4">Camión 4</option>
                     </select>
                 </div>
 
@@ -55,18 +51,13 @@
                 </div>
 
                 <div class="col-10 mx-auto">
-                    <label class="form-label">Eliga un Proyecto:</label>
-                    <select 
-                        class="form-select" 
-                        id="proyecto"
+                    <label class="form-label">Ingrese nombre de la Obra:</label>
+                    <input
                         name="proyecto"
-                        >
-                        <option value="">Seleccione</option>
-                        <option value="Proyecto 1">Proyecto 1</option>
-                        <option value="Proyecto 2">Proyecto 2</option>
-                        <option value="Proyecto 3">Proyecto 3</option>
-                        <option value="Apoyo Logístico">Apoyo Logístico</option>
-                    </select>
+                        type="text" 
+                        class="form-control" 
+                        id="proyecto"
+                        placeholder='Ejemplo: Albano 856' />
                 </div>
 
                 <div class="col-md-5 mx-auto text-center">
@@ -134,7 +125,7 @@
                     <a class="btn btn-warning" href="#datosUser">Atrás</a>
                     <a class="btn btn-warning" href="#luces" >Siguiente</a>
                     <a class="btn btn-warning" href="./docs.html">Ver resgistros</a>
-                    <button class="btn btn-success"  id="sig2">Enviar</button>
+                    <button class="btn btn-success"  id="enviarData">Enviar</button>
                 </div>
             </section>
 

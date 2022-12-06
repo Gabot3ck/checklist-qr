@@ -9,7 +9,7 @@ export const setData = () => {
 
     const form = d.getElementById("formChecklist");
 
-    const   camion = d.getElementById("IDCamion").value,
+    const   camion = d.getElementById("patenteCamion").value,
             odometro = d.getElementById("odometro").value,
             proyecto = d.getElementById("proyecto").value,
             documentacion = d.querySelector("input[type=radio][name=documentacion]:checked").value,
@@ -34,7 +34,7 @@ export const setData = () => {
 
         const docs = [];
 
-        const q = query(collection(db, "camiones"), where("nombre", "==", camion));
+        const q = query(collection(db, "camiones"), where("patente", "==", camion));
 
         onSnapshot(q, async (querySnapshot) => {
 
