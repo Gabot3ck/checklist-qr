@@ -76,6 +76,13 @@ li{
     background-color: rgb(160, 30, 21);
 }
 
+/*TODO    F O R M    N E U M Á T I C O S    */
+.form_neumaticos{
+    width: 90%;
+    height: 100vh;
+    background-color: rgb(25, 101, 199);
+}
+
 /*TODO     A U T E N T I C A C I Ó N      */
 .wrapperLogin{
     width: 100%;
