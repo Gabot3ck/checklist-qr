@@ -55,15 +55,15 @@ li{
     height: 60px;
 }
 
-/*TODO    F O R M    S E G U R I D A D    */
-.form_seguridad{
+/*TODO    F O R M    R E G I S T R O    */
+.form_registro{
     width: 90%;
     height: calc(100vh - 70px);
     background-color: brown;
 }
 
 /*TODO    F O R M    L U C E S    */
-.form_luces{
+.form_seguridad{
     width: 90%;
     height: 100vh;
     background-color: rgb(236, 102, 13);
