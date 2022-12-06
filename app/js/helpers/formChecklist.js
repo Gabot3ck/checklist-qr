@@ -13,9 +13,5 @@ onAuthStateChanged(auth, async (user) => {
     if (user) {
         const querySnapshot = await getDocs(collection(db, "camiones"));
         btn.addEventListener("click", e => setData());
-
-    } else {
-
-        console.log("user no existe");
-    }
-})
+    } 
+});

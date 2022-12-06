@@ -5,18 +5,18 @@ import { showMessage } from "./showMessage.js";
 
 let signInForm = document.querySelector("#loginForm");
 
+
 signInForm.addEventListener("submit", async (e) => {
     e.preventDefault();
 
     const email = signInForm["login-email"].value;
     const password = signInForm["login-password"].value;
 
-    console.log(email, password);
-
     try {
         const credentials = await signInWithEmailAndPassword(auth, email, password);
+        localStorage.setItem("idUser", JSON.stringify(credentials.user.uid));
         window.location = "app/pages/formChecklist.html";
-        signInForm.reset(); 
+        signInForm.reset();
 
     } catch (error) {
         if(error.code === "auth/wrong-password") {

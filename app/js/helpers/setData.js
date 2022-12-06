@@ -1,4 +1,4 @@
-import { collection, doc, setDoc, onSnapshot, query, where} from "https://www.gstatic.com/firebasejs/9.14.0/firebase-firestore.js";
+import { collection, doc, setDoc, onSnapshot, query, where, getDoc} from "https://www.gstatic.com/firebasejs/9.14.0/firebase-firestore.js";
 import { db } from "../db/firebase.js";
 
 
@@ -17,6 +17,7 @@ export const setData = () => {
             
     ;
 
+    
     const registro = {
         odometro: odometro,
         proyecto: proyecto,
@@ -24,26 +25,30 @@ export const setData = () => {
         bocina: bocina,
     }
 
-    form.addEventListener("submit", (e) => {
+    form.addEventListener("submit",  (e) => {
         e.preventDefault();
+
+        const idUser = JSON.parse(localStorage.getItem("idUser"));
 
         const fecha = moment().format('DD-MM-YYYY hh:mm:ss a');
 
-        
-        
-        const q = query(collection(db, "camiones"), where("nombre", "==", camion));
         const docs = [];
 
-        onSnapshot(q, (querySnapshot) => {
+        const q = query(collection(db, "camiones"), where("nombre", "==", camion));
+
+        onSnapshot(q, async (querySnapshot) => {
+
             querySnapshot.forEach((doc) => {
                 docs.push({...doc.data()});
             });
+        
+            const conductor =  await getDoc(doc(db,"conductores",idUser));
 
             const data = docs[0];
 
             const nuevoRegistro = doc(collection(db, "registros"));
 
-            setDoc(nuevoRegistro, {...registro, fecha:fecha, camion:data});
+            setDoc(nuevoRegistro, {...registro, fecha:fecha, camion:data, conductor:conductor.data() });
         });
 
         form.reset();
