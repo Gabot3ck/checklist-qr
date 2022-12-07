@@ -2,6 +2,7 @@ import { collection, onSnapshot, doc, query, orderBy} from "https://www.gstatic.
 import { db } from "../db/firebase.js";
 import { showModal } from "./showModal.js";
 
+
 const d= document;
 
 d.addEventListener("DOMContentLoaded", () => {
@@ -47,14 +48,14 @@ d.addEventListener("DOMContentLoaded", () => {
                                 <div class="modal-body" id="${index}">
                                     <div class="container">
                                         <div class="row align-items-start">
-                                            <div class="col border">
-                                                Mi id es: ${el.camion.patente}
+                                            <div class="col-2 border text-center">
+                                                <img src="../images/logo ebg small.png" width="40" height="40" alt="Logo EBG">
                                             </div>
                                             <div class="col border">
-                                                Bocina: ${el.bocina}
+                                                <p>CHECKLIST CAMION</p>
                                             </div>
                                             <div class="col border">
-                                                Mi id es: ${el.camion.patente}
+                                                <p>MANTENCIÓN PREVENTIVA</p>
                                             </div>
                                         </div>
                                     </div>
