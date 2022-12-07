@@ -145,6 +145,7 @@ p{
 }
 
 /*TODO     D O C    P D F     */
+/*? *-*-*  Header PDF *-*-*-*/
 .pdf_header{
     height: 80px;
 }
@@ -180,6 +181,12 @@ p{
     font-weight: 700;
 }
 
-.pdf_dataCamion{
-
+/*? *-*-*  Data Camión  PDF *-*-*-*/
+.pdf_dataCamion p:first-child{
+    margin-right: 8px;
+    font-size: .8rem;
+    font-weight: 600;
+}
+.pdf_dataCamion p:last-child{
+    font-size: .8rem;
 }

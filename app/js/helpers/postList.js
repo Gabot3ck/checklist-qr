@@ -75,12 +75,43 @@ d.addEventListener("DOMContentLoaded", () => {
                                         </div>
 
                                         <div class="row pdf_dataCamion">
-                                            <div class="col-6 ">
-
+                                            <div class="col-6 d-flex flex-column border py-2">
+                                                <div class="d-flex w-100">
+                                                    <p>FECHA:</p>
+                                                    <p>${el.fecha}</p>
+                                                </div>
+                                                <div class="d-flex w-100" >
+                                                    <p>PROYECTO:</p>
+                                                    <p>${el.proyecto}</p>
+                                                </div>
+                                                <div class="d-flex w-100" >
+                                                    <p>PATENTE:</p>
+                                                    <p>${el.camion.patente}</p>
+                                                </div>
+                                                <div class="d-flex w-100" >
+                                                    <p>MARCA/MODELO:</p>
+                                                    <p>${el.camion.marca} ${el.camion.modelo}</p>
+                                                </div>
                                             </div>
-                                            <div>
 
-                                            </div class="col-6 ">
+                                            <div class="col-6 border py-2" >
+                                                <div class="d-flex w-100" >
+                                                    <p>AÑO:</p>
+                                                    <p>${el.camion.año}</p>
+                                                </div>
+                                                <div class="d-flex w-100" >
+                                                    <p>CONDUCTOR:</p>
+                                                    <p>${el.conductor.nombre}</p>
+                                                </div>
+                                                <div class="d-flex w-100" >
+                                                    <p>KM ACTUAL:</p>
+                                                    <p>${el.odometro}</p>
+                                                </div>
+                                                <div class="d-flex w-100" >
+                                                    <p>KM MANTENCIÓN:</p>
+                                                    <p>${el.camion.km_mantencion}</p>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
