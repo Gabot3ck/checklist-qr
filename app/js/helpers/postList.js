@@ -37,7 +37,7 @@ d.addEventListener("DOMContentLoaded", () => {
             
 
                     <div class="modal fade" id="Modal${index}" data-bs-backdrop="static" tabindex="-1" aria-labelledby="Modal mostrando los registros" aria-hidden="true">
-                        <div class="modal-dialog">
+                        <div class="modal-dialog modal-lg modal-dialog-scrollable">
                             <div class="modal-content">
                                 <div class="modal-header py-2">
                                     <h5 class="modal-title" >Información del checklist</h5>
@@ -46,23 +46,43 @@ d.addEventListener("DOMContentLoaded", () => {
 
 
                                 <div class="modal-body" id="${index}">
-                                    <div class="container">
-                                        <div class="row align-items-start">
+                                    <div class="container-fluid">
+
+                                        <div class="row pdf_header">
                                             <div class="col-2 border text-center">
-                                                <img src="../images/logo ebg small.png" width="40" height="40" alt="Logo EBG">
+                                                <img src="../images/logo ebg small.png" alt="Logo EBG">
                                             </div>
-                                            <div class="col border">
-                                                <p>CHECKLIST CAMION</p>
+
+                                            <div class="col border d-flex justify-content-center align-items-center flex-column">
+                                                <p class="text-center titulo">CHECKLIST <br> CAMION</p>
+                                                
                                             </div>
-                                            <div class="col border">
-                                                <p>MANTENCIÓN PREVENTIVA</p>
+
+                                            <div class="col border d-flex flex-column justify-content-center align-items-center p-0">
+                                                <div class="km border w-100 text-center">
+                                                    <p class="">MANTENCIÓN PREVENTIVA</p>
+                                                </div>
+                                                <div class="d-flex border w-100">
+                                                    <div class="km_info"  >
+                                                        <p class="text-center ">PERIODO ENTRE MANTENCIONES</p>
+                                                    </div>
+                                                    <div class="km_valor"  >
+                                                        <p class="text-center ">CADA <br> 5.000 KM</p>
+                                                    </div>
+                                                </div>
                                             </div>
+
+                                        </div>
+
+                                        <div class="row pdf_dataCamion">
+                                            <div class="col-6 ">
+
+                                            </div>
+                                            <div>
+
+                                            </div class="col-6 ">
                                         </div>
                                     </div>
-                                    
-
-                                    
-                                    
                                 </div>
                                 
                                 <div class="modal-footer">
@@ -89,3 +109,12 @@ d.addEventListener("DOMContentLoaded", () => {
 })
 
 
+
+
+{/* <table  class="tabla_pdf">
+    <thead>
+        <tr>
+        
+        </tr>
+    </thead>
+</table> */}

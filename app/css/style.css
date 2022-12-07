@@ -3,6 +3,7 @@
     --color-principal: #65C400;
     --color-secundario: #DDDEDC;
     --color-texto: #494949;
+    --color-border: #dee2e6;
 }
 
 
@@ -33,6 +34,9 @@ a{
 }
 li{
 	list-style: none;
+}
+p{
+    margin: 0;
 }
 .wrapper{
     width: clamp(320px,100%,768px);
@@ -140,3 +144,42 @@ li{
     background-color:  var(--color-principal);
 }
 
+/*TODO     D O C    P D F     */
+.pdf_header{
+    height: 80px;
+}
+.pdf_header img{
+    width: 70%;
+    height: 98%;
+}
+.pdf_header .km{
+    height: 40%;
+}
+.pdf_header .km + div{
+    height: 60%;
+}
+.pdf_header .km p{
+    font-size: .8rem;
+    font-weight: 600;
+}
+.pdf_header .km_info,
+.pdf_header .km_valor{
+    font-size: .7rem;
+    font-weight: 500;
+}
+.pdf_header .km_info{
+    width: 60%;
+    border-right: 2px solid var(--color-border);
+
+}
+.pdf_header .km_valor{
+    width: 40%;
+}
+.pdf_header .titulo{
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.pdf_dataCamion{
+
+}
