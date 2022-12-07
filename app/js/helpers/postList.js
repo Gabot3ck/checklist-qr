@@ -63,7 +63,7 @@ d.addEventListener("DOMContentLoaded", () => {
                                                     <p class="">MANTENCIÓN PREVENTIVA</p>
                                                 </div>
                                                 <div class="d-flex border w-100">
-                                                    <div class="km_info"  >
+                                                    <div class="km_info d-flex"  >
                                                         <p class="text-center ">PERIODO ENTRE MANTENCIONES</p>
                                                     </div>
                                                     <div class="km_valor"  >
@@ -113,6 +113,18 @@ d.addEventListener("DOMContentLoaded", () => {
                                                 </div>
                                             </div>
                                         </div>
+
+                                        <div class="row">
+                                            <div class="pdf_seguridad col-6" >
+                                                <div class="pdf_card_header">
+                                                </div>
+                                                <div class="pdf_card_footer">
+                                                </div>
+                                            </div>
+                                            <div class="pdf_luces col-6" >
+                                            </div>
+                                        </div>
+
                                     </div>
                                 </div>
                                 
@@ -139,13 +151,3 @@ d.addEventListener("DOMContentLoaded", () => {
 
 })
 
-
-
-
-{/* <table  class="tabla_pdf">
-    <thead>
-        <tr>
-        
-        </tr>
-    </thead>
-</table> */}
