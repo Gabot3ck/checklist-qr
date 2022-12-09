@@ -241,6 +241,69 @@ d.addEventListener("DOMContentLoaded", () => {
                                                 </div>
                                             </div>
 
+                                        </div>
+
+
+                                        <div class="row">
+
+                                            <div class="col-6 border py-1" >
+                                                <div class="w-100  text-center">
+                                                    <h6 class="fw-bold">CARROCERÍA Y MOTOR</h6>
+                                                </div>
+                                                <div class="pdf_card_header d-flex w-100  border">
+                                                    <p class="ps-3 py-1">CONTROLES</p>
+                                                    <p class="ps-3 py-1">ESTADO</p>
+                                                </div>
+                                                <div class="pdf_card_main w-100 d-flex border">
+                                                    <div class="d-flex flex-column align-items-start px-3"  >
+                                                        <p>Motor(estado general):</p>
+                                                        <p>Carrocería:</p>
+                                                        <p>Parachoques:</p>
+                                                        <p>Parabrisas:</p>
+                                                        <p>Espejo retrovisor:</p>
+                                                        <p>Vidrios laterales y posterior:</p>
+                                                        <p>Barra estabilizadora:</p>
+                                                    </div>
+                                                    <div class="d-flex flex-column  align-items-start px-4">
+                                                        <p>${el.motor}</p>
+                                                        <p>${el.carroceria}</p>
+                                                        <p>${el.parachoques}</p>
+                                                        <p>${el.parabrisas}</p>
+                                                        <p>${el.espejosRetro}</p>
+                                                        <p>${el.vidrios}</p>
+                                                        <p>${el.barraEstabilizadora}</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-6 border py-1" >
+                                                <div class="w-100  text-center">
+                                                    <h6 class="fw-bold">OTROS</h6>
+                                                </div>
+                                                <div class="pdf_card_header d-flex w-100  border">
+                                                    <p class="ps-3 py-1">CONTROLES</p>
+                                                    <p class="ps-3 py-1">ESTADO</p>
+                                                </div>
+                                                <div class="pdf_card_main w-100 d-flex border">
+                                                    <div class="d-flex flex-column align-items-start px-3"  >
+                                                        <p>Tablero:</p>
+                                                        <p>Odometro:</p>
+                                                        <p>Plumillas:</p>
+                                                        <p>Seguro de cabina:</p>
+                                                        <p>Radio Comercial:</p>
+                                                        <p>Pértica:</p>
+                                                    </div>
+                                                    <div class="d-flex flex-column  align-items-start px-4">
+                                                        <p>${el.tablero}</p>
+                                                        <p>${el.odometro}</p>
+                                                        <p>${el.plumillas}</p>
+                                                        <p>${el.seguroCabina}</p>
+                                                        <p>${el.radio}</p>
+                                                        <p>${el.pertica}</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
 
                                         </div>
 
