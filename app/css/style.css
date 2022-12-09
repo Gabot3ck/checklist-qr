@@ -143,7 +143,9 @@ p{
     border-radius: 15px;
     background-color:  var(--color-principal);
 }
-
+.textarea_display{
+    display: none;
+}
 /*TODO     D O C    P D F     */
 /*? *-*-*  Header PDF *-*-*-*/
 .pdf_header{

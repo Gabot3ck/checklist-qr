@@ -20,6 +20,7 @@ export const setData = () => {
             cinturon = d.querySelector("input[type=radio][name=cinturon]:checked").value,
             extintor = d.querySelector("input[type=radio][name=extintor]:checked").value,
             botiquin = d.querySelector("input[type=radio][name=botiquin]:checked").value,
+            obsSeguridad = d.getElementById("obsSeguridad").value,
             fusibles = d.querySelector("input[type=radio][name=fusibles]:checked").value,
             intermitentes = d.querySelector("input[type=radio][name=intermitentes]:checked").value,
             altasBajas = d.querySelector("input[type=radio][name=altasBajas]:checked").value,
@@ -99,6 +100,7 @@ export const setData = () => {
         seguroCabina: seguroCabina,
         radio: radio,
         pertica: pertica,
+        obsSeguridad: obsSeguridad,
     }
 
     form.addEventListener("submit",  (e) => {

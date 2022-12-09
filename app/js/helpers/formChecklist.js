@@ -6,9 +6,10 @@ import "./logout.js";
 // import { setupPosts } from "./postList.js";
 import { setData } from "./setData.js";
 
-
-const btn = document.getElementById("enviarData");
-const select = document.getElementById("patenteCamion");
+const d = document;
+const btn = d.getElementById("enviarData");
+const btnObsSeguridad = d.getElementById("btnObsSeguridad");
+const select = d.getElementById("patenteCamion");
 
 
 onAuthStateChanged(auth, async (user) => {
@@ -22,7 +23,7 @@ onAuthStateChanged(auth, async (user) => {
             });
 
             docs.forEach(el => {
-                const option = document.createElement("option");
+                const option = d.createElement("option");
                 option.text= el.patente;
                 option.value = el.patente;
                 select.appendChild(option);
@@ -31,4 +32,12 @@ onAuthStateChanged(auth, async (user) => {
 
         btn.addEventListener("click", e => setData());
     } 
+});
+
+
+btnObsSeguridad.addEventListener("click", e => {
+    e.preventDefault();
+
+    const textarea = d.getElementById("obsSeguridad");
+    textarea.classList.toggle("textarea_display");
 });
