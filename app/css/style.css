@@ -192,6 +192,32 @@ p{
 }
 
 /*? *-*-*  Seguridad  PDF *-*-*-*/
-.pdf_seguridad{
+/* .pdf_seguridad{
+
+} */
+
+.pdf_card_header p{
+    font-size: .8rem;
+    font-weight: 700;
+    text-align: center;
+    text-align: start;
     
 }
+.pdf_card_header p:first-child{
+    width: 70%;
+    border-right: 2px solid var(--color-border);
+}
+.pdf_card_header p:last-child{
+    width: 30%;
+}
+.pdf_card_main div:first-child{
+    width: 70%;
+}
+.pdf_card_main div:last-child{
+    width: 30%;
+}
+.pdf_card_main p{
+    font-size: .8rem;
+}
+
+
