@@ -115,9 +115,9 @@ d.addEventListener("DOMContentLoaded", () => {
                                         </div>
 
 
-                                        <div class="row">
+                                        <div class="row pdf_row1">
                                             
-                                            <div class="col-6 border py-1" >
+                                            <div class="col-6 border pb-1 pt-2 card h-100" >
                                                 <div class="w-100  text-center">
                                                     <h6 class="fw-bold">SEGURIDAD</h6>
                                                 </div>
@@ -149,7 +149,7 @@ d.addEventListener("DOMContentLoaded", () => {
                                                 </div>
                                             </div>
 
-                                            <div class="col-6 border py-1" >
+                                            <div class="col-6 border pb-1 pt-2 card h-100" >
                                                 <div class="w-100  text-center">
                                                     <h6 class="fw-bold">SISTEMA DE LUCES</h6>
                                                 </div>
@@ -185,9 +185,9 @@ d.addEventListener("DOMContentLoaded", () => {
 
                                         </div>
 
-                                        <div class="row">
+                                        <div class="row pdf_row2">
 
-                                            <div class="col-6 border py-1" >
+                                            <div class="col-6 border pb-1 pt-2" >
                                                 <div class="w-100  text-center">
                                                     <h6 class="fw-bold">NEUMÁTICOS</h6>
                                                 </div>
@@ -215,7 +215,7 @@ d.addEventListener("DOMContentLoaded", () => {
                                                 </div>
                                             </div>
 
-                                            <div class="col-6 border py-1" >
+                                            <div class="col-6 border pb-1 pt-2" >
                                                 <div class="w-100  text-center">
                                                     <h6 class="fw-bold">NIVELES</h6>
                                                 </div>
@@ -244,9 +244,9 @@ d.addEventListener("DOMContentLoaded", () => {
                                         </div>
 
 
-                                        <div class="row">
+                                        <div class="row pdf_row3 ">
 
-                                            <div class="col-6 border py-1" >
+                                            <div class="col-6 border pb-1 pt-2 " >
                                                 <div class="w-100  text-center">
                                                     <h6 class="fw-bold">CARROCERÍA Y MOTOR</h6>
                                                 </div>
@@ -276,7 +276,7 @@ d.addEventListener("DOMContentLoaded", () => {
                                                 </div>
                                             </div>
 
-                                            <div class="col-6 border py-1" >
+                                            <div class="col-6 border pb-1 pt-2" >
                                                 <div class="w-100  text-center">
                                                     <h6 class="fw-bold">OTROS</h6>
                                                 </div>
@@ -304,7 +304,15 @@ d.addEventListener("DOMContentLoaded", () => {
                                                 </div>
                                             </div>
 
+                                        </div>
 
+                                        <div class="row">
+                                            <div class="col-12 border pb-1 pt-2 pdf_card_footer">
+                                                <div class="w-100  text-start">
+                                                    <h6 class="fw-bold">OBSERVACIONES:</h6>
+                                                    <p>Se anotan las observaciones</p>
+                                                </div>
+                                            </div>
                                         </div>
 
                                     </div>

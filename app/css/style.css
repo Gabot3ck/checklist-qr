@@ -195,7 +195,24 @@ p{
 /* .pdf_seguridad{
 
 } */
-
+.pdf_row1{
+    min-height: 243px;
+}
+.pdf_row1 .pdf_card_main{
+    min-height: 173px;
+}
+.pdf_row2{
+    min-height: 184px;
+}
+.pdf_row2 .pdf_card_main{
+    min-height: 116px;
+}
+.pdf_row3{
+    min-height: 203px;
+}
+.pdf_row3 .pdf_card_main{
+    min-height: 135px;
+}
 .pdf_card_header p{
     font-size: .8rem;
     font-weight: 700;
@@ -216,7 +233,8 @@ p{
 .pdf_card_main div:last-child{
     width: 30%;
 }
-.pdf_card_main p{
+.pdf_card_main p,
+.pdf_card_footer p{
     font-size: .8rem;
 }
 
