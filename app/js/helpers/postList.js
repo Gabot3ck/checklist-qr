@@ -114,6 +114,7 @@ d.addEventListener("DOMContentLoaded", () => {
                                             </div>
                                         </div>
 
+
                                         <div class="row">
                                             
                                             <div class="col-6 border py-1" >
@@ -178,6 +179,64 @@ d.addEventListener("DOMContentLoaded", () => {
                                                         <p>${el.luzFreno}</p>
                                                         <p>${el.luzRetroceso}</p>
                                                         <p>${el.baliza}</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="row">
+
+                                            <div class="col-6 border py-1" >
+                                                <div class="w-100  text-center">
+                                                    <h6 class="fw-bold">NEUMÁTICOS</h6>
+                                                </div>
+                                                <div class="pdf_card_header d-flex w-100  border">
+                                                    <p class="ps-3 py-1">CONTROLES</p>
+                                                    <p class="ps-3 py-1">ESTADO</p>
+                                                </div>
+                                                <div class="pdf_card_main w-100 d-flex border">
+                                                    <div class="d-flex flex-column align-items-start px-3"  >
+                                                        <p>Neumático auxiliar:</p>
+                                                        <p>Neumáticos delanteros:</p>
+                                                        <p>Neumáticos posteriores:</p>
+                                                        <p>Gata y llaves de rueda:</p>
+                                                        <p>Amortiguadores delanteros:</p>
+                                                        <p>Paquetes delanteros:</p>
+                                                    </div>
+                                                    <div class="d-flex flex-column  align-items-start px-4">
+                                                        <p>${el.neumaticoAuxiliar}</p>
+                                                        <p>${el.neumaticosDelanteros}</p>
+                                                        <p>${el.neumaticosPosteriores}</p>
+                                                        <p>${el.gata}</p>
+                                                        <p>${el.amortiguador}</p>
+                                                        <p> ${el.paquetes}</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-6 border py-1" >
+                                                <div class="w-100  text-center">
+                                                    <h6 class="fw-bold">NIVELES</h6>
+                                                </div>
+                                                <div class="pdf_card_header d-flex w-100  border">
+                                                    <p class="ps-3 py-1">CONTROLES</p>
+                                                    <p class="ps-3 py-1">ESTADO</p>
+                                                </div>
+                                                <div class="pdf_card_main w-100 d-flex border">
+                                                    <div class="d-flex flex-column align-items-start px-3"  >
+                                                        <p>Aceite de motor:</p>
+                                                        <p>Líquido de frenos :</p>
+                                                        <p>Agua del radiador:</p>
+                                                        <p>Líquido limpia parabrisas:</p>
+                                                        <p>Aceite de corona:</p>
+                                                    </div>
+                                                    <div class="d-flex flex-column  align-items-start px-4">
+                                                        <p>${el.aceiteMotor}</p>
+                                                        <p>${el.liquidoFrenos}</p>
+                                                        <p>${el.aguaRadiador}</p>
+                                                        <p>${el.limpiaParabrisas}</p>
+                                                        <p>${el.aceiteCorona}</p>
                                                     </div>
                                                 </div>
                                             </div>
