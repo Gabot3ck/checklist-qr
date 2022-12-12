@@ -58,7 +58,7 @@ p{
 .wrapper_header .navbar .container-fluid{
     background-color: var(--color-secundario);
 }
-.wrapper_header .navbar .container-fluid .btn_sesion{
+.wrapper_header .navbar .container-fluid button{
     background-color: transparent;
 }
 .wrapper_header .navbar-brand img{
@@ -71,7 +71,16 @@ p{
 .form_registro{
     width: 90%;
     height: calc(100vh - 70px);
-    background-color: brown;
+    /* background-color: brown; */
+}
+.form_registro .card_datos{
+    height: 260px;
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
 /*TODO    F O R M    S E G U R I D A D    */

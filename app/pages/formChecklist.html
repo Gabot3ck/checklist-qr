@@ -33,68 +33,48 @@
                     </ul>
                 </div>
             </div>
-        </nav>
-
-
-        <!-- <div class="header wrapper d-flex justify-content-around align-items-center">
-
-            <nav class="navbar navbar-expand-md mx-auto navbar-light bg-light ">
-                <a class="navbar-brand" href="#header">
-                    <img src="../images/logo ebg small.png" alt="Logo EBG">
-                    <h1 class="text-center d-block h5" >Formulario de resgistro </h1>
-                </a>
-            </nav>  
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <a class="btn btn-warning" href="./docs.html">Ver resgistros</a>
-                <button class="btn btn-danger h-50 " id="btnLogout">Cerrar sesión</button>
-            </div>
-            <div class="">
-                
-                <h2 class="text-center d-block h6">(Checklist de camiones)</h2>
-            </div>
-            
-        </div> -->
+        </nav>.
     </header>
 
     
 <!--?    SECCION     DEL    FORMULARIO -->
-    <main class="wrapper mx-auto bg-primary">
+    <main class="wrapper mx-auto ">
         <form action="" class="row  mx-auto mt-0" id="formChecklist" autoComplete="off">
 
             <section class="form_registro d-flex flex-column justify-content-center gap-5 mx-auto" id="datosUser">
-                <div class="col-10  mx-auto">
-                    <label class="form-label">Eliga un camión:</label>
-                    <select 
-                        class="form-select" 
-                        id="patenteCamion" 
-                        name="camion"
-                        >
-                        <option value="">Seleccione</option>
-                    </select>
+                <div class="w-100 card_datos d-flex flex-column justify-content-evenly" >
+                    <div class="col-10  mx-auto">
+                        <label class="form-label">Eliga un camión:</label>
+                        <select 
+                            class="form-select" 
+                            id="patenteCamion" 
+                            name="camion"
+                            >
+                            <option value="">Seleccione</option>
+                        </select>
+                    </div>
+    
+                    <div class="col-10 mx-auto">
+                        <label class="form-label">Ingrese el km actual</label>
+                        <input
+                            name="odometro"
+                            type="text" 
+                            class="form-control" 
+                            id="odometro"
+                            placeholder='Ejemplo: 256589' />
+                    </div>
+    
+                    <div class="col-10 mx-auto">
+                        <label class="form-label">Ingrese Proyecto:</label>
+                        <input
+                            name="proyecto"
+                            type="text" 
+                            class="form-control" 
+                            id="proyecto"
+                            placeholder='Ejemplo: Albano 856' />
+                    </div>
                 </div>
-
-                <div class="col-10 mx-auto">
-                    <label class="form-label">Ingrese el km actual</label>
-                    <input
-                        name="odometro"
-                        type="text" 
-                        class="form-control" 
-                        id="odometro"
-                        placeholder='Ejemplo: 256589' />
-                </div>
-
-                <div class="col-10 mx-auto">
-                    <label class="form-label">Ingrese Proyecto:</label>
-                    <input
-                        name="proyecto"
-                        type="text" 
-                        class="form-control" 
-                        id="proyecto"
-                        placeholder='Ejemplo: Albano 856' />
-                </div>
+                
 
                 <div class="col-md-5 mx-auto text-center">
                     <a class="btn btn-warning" href="#seguridad" id="siguiente">Siguiente</a>
