@@ -50,7 +50,7 @@ p{
     background-color: #383838;
     color: var(--color-secundario);
 }
-.boton-hero {
+/* .boton-hero {
 	position: relative;
 	margin: 40px auto 0;
 	padding: 19px 22px;
@@ -94,17 +94,17 @@ p{
 	transform: translateX(-5px);
 	transition: all 0.3s ease;
 }
-.boton-hero:hover:before {
+.boton-hero:before {
 	width: 96%;
 	background: var(--color-texto);
 }
-.boton-hero:hover svg {
+.boton-hero svg {
 	stroke: var(--color-principal);
 	transform: translateX(0);
 }
 .boton-hero:active {
 	transform: scale(0.96);
-}
+} */
 /*TODO    H E A D E R    */
 .wrapper_header{
 	width: 100%;
