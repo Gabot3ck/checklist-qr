@@ -95,8 +95,11 @@ p{
     width: 90%;
     height: 100vh;
 }
+.form_seguridad p{
+    font-weight: 600;
+}
 .card_seguridad{
-    min-height: 480px;
+    min-height: 550px;
     background: var(--color-secundarioGlass);
     box-shadow: 0 8px 32px 0 var(--color-secundario);
     backdrop-filter: blur( 4px );
