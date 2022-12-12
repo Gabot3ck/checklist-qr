@@ -1,13 +1,16 @@
 import { collection, onSnapshot, doc, query, orderBy} from "https://www.gstatic.com/firebasejs/9.14.0/firebase-firestore.js";
 import { db } from "../db/firebase.js";
 import { showModal } from "./showModal.js";
-
+import { logout } from "./logout.js";
 
 const d= document;
 
 d.addEventListener("DOMContentLoaded", () => {
 
     const table = d.getElementById("tableData");
+
+    const btnLogout2 = d.getElementById("btnLogout2");
+    logout(btnLogout2);
 
 
 //todo   Función que obtiene los datos de Firestore

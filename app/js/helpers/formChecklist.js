@@ -6,6 +6,7 @@ import "./logout.js";
 // import { setupPosts } from "./postList.js";
 import { setData } from "./setData.js";
 import { addObs } from "./addObs.js";
+import { logout } from "./logout.js";
 
 const d = document;
 const btn = d.getElementById("enviarData");
@@ -16,6 +17,7 @@ const btnObsNiveles = d.getElementById("btnObsNiveles");
 const btnObsCarroceria = d.getElementById("btnObsCarroceria");
 const btnObsOtros = d.getElementById("btnObsOtros");
 const select = d.getElementById("patenteCamion");
+const btnLogout = document.getElementById("btnLogout");
 
 
 onAuthStateChanged(auth, async (user) => {
@@ -37,6 +39,8 @@ onAuthStateChanged(auth, async (user) => {
         })
 
         btn.addEventListener("click", e => setData());
+        
+        logout(btnLogout);
     } 
 });
 

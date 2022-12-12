@@ -20,13 +20,27 @@
 <body>
 
     <header class="wrapper_header  bg-success d-flex justify-content-center" id="header">
-        <div class="header wrapper d-flex justify-content-around align-items-center">
-            <img src="../images/logo ebg small.png" alt="Logo EBG">
-            <div class="">
-                <h1 class="text-center d-block h5" >Registros de Checklists </h1>
+        <nav class="navbar wrapper py-0">
+            <div class="container-fluid py-1">
+                <a class="navbar-brand" href="#">
+                    <img src="../images/logo ebg small.png" alt="Logo EBG"  class="d-inline-block align-text-center me-3">
+                    Checklist Flota EBG  
+                </a>
+
+                <button class="navbar-toggler d-flex align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link pb-0" aria-current="page" href="../pages/formChecklist.html">Registrar Formulario</a>
+                            <button class="nav-link border-0" id="btnLogout2">Cerrar sesión</button>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <a href="../../index.html" class="btn btn-danger h-50 " id="btnLogout">Salir</a>
-        </div>
+        </nav>.
     </header>
 
     <section class="wrapper mx-auto">
