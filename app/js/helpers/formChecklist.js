@@ -5,10 +5,16 @@ import { auth, db } from "../db/firebase.js";
 import "./logout.js";
 // import { setupPosts } from "./postList.js";
 import { setData } from "./setData.js";
+import { addObs } from "./addObs.js";
 
 const d = document;
 const btn = d.getElementById("enviarData");
 const btnObsSeguridad = d.getElementById("btnObsSeguridad");
+const btnObsLuces = d.getElementById("btnObsLuces");
+const btnObsNeumaticos = d.getElementById("btnObsNeumaticos");
+const btnObsNiveles = d.getElementById("btnObsNiveles");
+const btnObsCarroceria = d.getElementById("btnObsCarroceria");
+const btnObsOtros = d.getElementById("btnObsOtros");
 const select = d.getElementById("patenteCamion");
 
 
@@ -37,7 +43,30 @@ onAuthStateChanged(auth, async (user) => {
 
 btnObsSeguridad.addEventListener("click", e => {
     e.preventDefault();
+    addObs("obsSeguridad");
+});
 
-    const textarea = d.getElementById("obsSeguridad");
-    textarea.classList.toggle("textarea_display");
+btnObsLuces.addEventListener("click", e => {
+    e.preventDefault();
+    addObs("obsLuces");
+});
+
+btnObsNeumaticos.addEventListener("click", e => {
+    e.preventDefault();
+    addObs("obsNeumaticos");
+});
+
+btnObsNiveles.addEventListener("click", e => {
+    e.preventDefault();
+    addObs("obsNiveles");
+});
+
+btnObsCarroceria.addEventListener("click", e => {
+    e.preventDefault();
+    addObs("obsCarroceria");
+});
+
+btnObsOtros.addEventListener("click", e => {
+    e.preventDefault();
+    addObs("obsOtros");
 });

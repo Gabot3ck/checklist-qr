@@ -310,7 +310,7 @@ d.addEventListener("DOMContentLoaded", () => {
                                             <div class="col-12 border pb-1 pt-2 pdf_card_footer">
                                                 <div class="w-100  text-start">
                                                     <h6 class="fw-bold">OBSERVACIONES:</h6>
-                                                    <p>${el.obsSeguridad}</p>
+                                                    <p>*${el.obsSeguridad} *${el.obsLuces} *${el.obsNeumaticos} *${el.obsNiveles} *${el.obsCarroceria} *${el.obsOtros}</p>
                                                 </div>
                                             </div>
                                         </div>

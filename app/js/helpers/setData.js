@@ -20,7 +20,6 @@ export const setData = () => {
             cinturon = d.querySelector("input[type=radio][name=cinturon]:checked").value,
             extintor = d.querySelector("input[type=radio][name=extintor]:checked").value,
             botiquin = d.querySelector("input[type=radio][name=botiquin]:checked").value,
-            obsSeguridad = d.getElementById("obsSeguridad").value,
             fusibles = d.querySelector("input[type=radio][name=fusibles]:checked").value,
             intermitentes = d.querySelector("input[type=radio][name=intermitentes]:checked").value,
             altasBajas = d.querySelector("input[type=radio][name=altasBajas]:checked").value,
@@ -53,7 +52,13 @@ export const setData = () => {
             plumillas = d.querySelector("input[type=radio][name=plumillas]:checked").value,
             seguroCabina = d.querySelector("input[type=radio][name=seguroCabina]:checked").value,
             radio = d.querySelector("input[type=radio][name=radio]:checked").value,
-            pertica = d.querySelector("input[type=radio][name=pertica]:checked").value;
+            pertica = d.querySelector("input[type=radio][name=pertica]:checked").value,
+            obsSeguridad = d.getElementById("obsSeguridad").value,
+            obsLuces = d.getElementById("obsLuces").value,
+            obsNeumaticos = d.getElementById("obsNeumaticos").value,
+            obsNiveles = d.getElementById("obsNiveles").value,
+            obsCarroceria = d.getElementById("obsCarroceria").value,
+            obsOtros = d.getElementById("obsOtros").value;
 
     
     const registro = {
@@ -101,6 +106,11 @@ export const setData = () => {
         radio: radio,
         pertica: pertica,
         obsSeguridad: obsSeguridad,
+        obsLuces: obsLuces,
+        obsNeumaticos: obsNeumaticos,
+        obsNiveles: obsNiveles,
+        obsCarroceria: obsCarroceria,
+        obsOtros: obsOtros,
     }
 
     form.addEventListener("submit",  (e) => {
