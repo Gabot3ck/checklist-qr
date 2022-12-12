@@ -96,7 +96,7 @@ p{
 .form_seguridad p{
     font-weight: 600;
 }
-.card_seguridad{
+.card_form{
     min-height: 580px;
     background: var(--color-secundarioGlass);
     box-shadow: 0 8px 32px 0 var(--color-secundario);
@@ -110,35 +110,30 @@ p{
 .form_luces{
     width: 90%;
     height: 100vh;
-    background-color: rgb(160, 30, 21);
 }
 
 /*TODO    F O R M    N E U M Á T I C O S    */
 .form_neumaticos{
     width: 90%;
     height: 100vh;
-    background-color: rgb(25, 101, 199);
 }
 
 /*TODO    F O R M    N I V E L E S    */
 .form_niveles{
     width: 90%;
     height: 100vh;
-    background-color: rgb(34, 126, 34);
 }
 
 /*TODO    F O R M    C A R R O C E R Í A    */
 .form_carroceria{
     width: 90%;
     height: 100vh;
-    background-color: rgb(190, 48, 5);
 }
 
 /*TODO    F O R M    O T R O S    */
 .form_otros{
     width: 90%;
     height: 100vh;
-    background-color: rgb(46, 139, 88);
 }
 
 /*TODO     A U T E N T I C A C I Ó N      */
