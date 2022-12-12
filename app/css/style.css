@@ -5,6 +5,7 @@
     --color-principalGlass: #65c4005b;
     --color-secundarioGlass: #dddedccc;
     --color-texto: #383838;
+    --color-textoGlass: #383838a9;
     --color-border: #dee2e6;
 }
 
@@ -49,6 +50,61 @@ p{
     background-color: #383838;
     color: var(--color-secundario);
 }
+.boton-hero {
+	position: relative;
+	margin: 40px auto 0;
+	padding: 19px 22px;
+	display: flex;
+	align-items: center;
+	color: white;
+	transition: all 0.2s ease;
+}
+.boton-hero:hover {
+	color: var(--color-principal);
+}
+.boton-hero:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: block;
+	width: 40px;
+	height: 40px;
+	margin-left: 5px;
+	border-radius: 28px;
+    background: var(--color-texto);
+	transition: all 0.3s ease;
+}
+.boton-hero span {
+	position: relative;
+	font-family: var(--font-boton);
+	font-weight: 700;
+	line-height: 10px;
+	letter-spacing: 0.25em;
+}
+.boton-hero svg {
+	position: relative;
+	top: 0;	
+	margin-left: 10px !important;
+	fill: none;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+	stroke: white;
+	stroke-width: 2;
+	transform: translateX(-5px);
+	transition: all 0.3s ease;
+}
+.boton-hero:hover:before {
+	width: 96%;
+	background: var(--color-texto);
+}
+.boton-hero:hover svg {
+	stroke: var(--color-principal);
+	transform: translateX(0);
+}
+.boton-hero:active {
+	transform: scale(0.96);
+}
 /*TODO    H E A D E R    */
 .wrapper_header{
 	width: 100%;
@@ -81,15 +137,8 @@ p{
     /* background-color: brown; */
 }
 .form_registro .card_datos{
-    height: 260px;
+    height: 300px;
     background: var(--color-secundarioGlass);
-    /* border-radius: 16px;
-    box-shadow: 0 8px 32px 0 var(--color-secundarioGlass);
-    backdrop-filter: blur(5.6px);
-    -webkit-backdrop-filter: blur(5.6px);
-    border: 1px solid rgba( 255, 255, 255, 0.18 ); */
-
-
     box-shadow: 0 8px 32px 0 var(--color-secundario);
     backdrop-filter: blur( 4px );
     -webkit-backdrop-filter: blur( 4px );
