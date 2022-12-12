@@ -58,16 +58,14 @@ p{
 .wrapper_header .navbar .container-fluid{
     background-color: var(--color-secundario);
 }
-.wrapper_header .navbar .container-fluid button{
+.wrapper_header .navbar .container-fluid .btn_sesion{
     background-color: transparent;
 }
-/* .wrapper_header .navbar .nav-link{
-    font-weight: 500;
-} */
 .wrapper_header .navbar-brand img{
     width: 60px;
     height: 60px;
 }
+
 
 /*TODO    F O R M    R E G I S T R O    */
 .form_registro{
