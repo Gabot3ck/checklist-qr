@@ -86,16 +86,6 @@ p{
     border-radius: 10px;
     border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
-
-
-/*TODO    F O R M    S E G U R I D A D    */
-.form_seguridad{
-    width: 90%;
-    height: 100vh;
-}
-.form_seguridad p{
-    font-weight: 600;
-}
 .card_form{
     min-height: 580px;
     background: var(--color-secundarioGlass);
@@ -104,6 +94,15 @@ p{
     -webkit-backdrop-filter: blur( 4px );
     border-radius: 10px;
     border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+.card_form p{
+    font-weight: 600;
+}
+
+/*TODO    F O R M    S E G U R I D A D    */
+.form_seguridad{
+    width: 90%;
+    height: 100vh;
 }
 
 /*TODO    F O R M    L U C E S    */
