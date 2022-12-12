@@ -117,9 +117,9 @@ d.addEventListener("DOMContentLoaded", () => {
 
                                         <div class="row pdf_row1">
                                             
-                                            <div class="col-6 border pb-1 pt-2 card h-100" >
+                                            <div class="col-6 border pb-1 pt-2" >
                                                 <div class="w-100  text-center">
-                                                    <h6 class="fw-bold">SEGURIDAD</h6>
+                                                    <h6 class="fw-bold pdf_title">SEGURIDAD</h6>
                                                 </div>
                                                 <div class="pdf_card_header d-flex w-100  border">
                                                     <p class="ps-3 py-1">CONTROLES</p>
@@ -149,9 +149,9 @@ d.addEventListener("DOMContentLoaded", () => {
                                                 </div>
                                             </div>
 
-                                            <div class="col-6 border pb-1 pt-2 card h-100" >
+                                            <div class="col-6 border pb-1 pt-2" >
                                                 <div class="w-100  text-center">
-                                                    <h6 class="fw-bold">SISTEMA DE LUCES</h6>
+                                                    <h6 class="fw-bold pdf_title">SISTEMA DE LUCES</h6>
                                                 </div>
                                                 <div class="pdf_card_header d-flex w-100  border">
                                                     <p class="ps-3 py-1">CONTROLES</p>
@@ -189,7 +189,7 @@ d.addEventListener("DOMContentLoaded", () => {
 
                                             <div class="col-6 border pb-1 pt-2" >
                                                 <div class="w-100  text-center">
-                                                    <h6 class="fw-bold">NEUMÁTICOS</h6>
+                                                    <h6 class="fw-bold pdf_title">NEUMÁTICOS</h6>
                                                 </div>
                                                 <div class="pdf_card_header d-flex w-100  border">
                                                     <p class="ps-3 py-1">CONTROLES</p>
@@ -217,7 +217,7 @@ d.addEventListener("DOMContentLoaded", () => {
 
                                             <div class="col-6 border pb-1 pt-2" >
                                                 <div class="w-100  text-center">
-                                                    <h6 class="fw-bold">NIVELES</h6>
+                                                    <h6 class="fw-bold pdf_title">NIVELES</h6>
                                                 </div>
                                                 <div class="pdf_card_header d-flex w-100  border">
                                                     <p class="ps-3 py-1">CONTROLES</p>
@@ -248,7 +248,7 @@ d.addEventListener("DOMContentLoaded", () => {
 
                                             <div class="col-6 border pb-1 pt-2 " >
                                                 <div class="w-100  text-center">
-                                                    <h6 class="fw-bold">CARROCERÍA Y MOTOR</h6>
+                                                    <h6 class="fw-bold pdf_title">CARROCERÍA Y MOTOR</h6>
                                                 </div>
                                                 <div class="pdf_card_header d-flex w-100  border">
                                                     <p class="ps-3 py-1">CONTROLES</p>
@@ -278,7 +278,7 @@ d.addEventListener("DOMContentLoaded", () => {
 
                                             <div class="col-6 border pb-1 pt-2" >
                                                 <div class="w-100  text-center">
-                                                    <h6 class="fw-bold">OTROS</h6>
+                                                    <h6 class="fw-bold pdf_title">OTROS</h6>
                                                 </div>
                                                 <div class="pdf_card_header d-flex w-100  border">
                                                     <p class="ps-3 py-1">CONTROLES</p>
@@ -309,7 +309,7 @@ d.addEventListener("DOMContentLoaded", () => {
                                         <div class="row">
                                             <div class="col-12 border pb-1 pt-2 pdf_card_footer">
                                                 <div class="w-100  text-start">
-                                                    <h6 class="fw-bold">OBSERVACIONES:</h6>
+                                                    <h6 class="fw-bold pdf_title">OBSERVACIONES:</h6>
                                                     <p>*${el.obsSeguridad} *${el.obsLuces} *${el.obsNeumaticos} *${el.obsNiveles} *${el.obsCarroceria} *${el.obsOtros}</p>
                                                 </div>
                                             </div>

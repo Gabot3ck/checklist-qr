@@ -54,7 +54,17 @@ p{
     height: 70px;
     background-color: darkviolet;
 }
-.wrapper_header .header img{
+
+.wrapper_header .navbar .container-fluid{
+    background-color: var(--color-secundario);
+}
+.wrapper_header .navbar .container-fluid button{
+    background-color: transparent;
+}
+/* .wrapper_header .navbar .nav-link{
+    font-weight: 500;
+} */
+.wrapper_header .navbar-brand img{
     width: 60px;
     height: 60px;
 }
@@ -148,6 +158,10 @@ p{
 }
 /*TODO     D O C    P D F     */
 /*? *-*-*  Header PDF *-*-*-*/
+.pdf_title{
+    font-size: 14px;
+    text-decoration: underline;
+}
 .pdf_header{
     height: 80px;
 }
@@ -194,9 +208,6 @@ p{
 }
 
 /*? *-*-*  Seguridad  PDF *-*-*-*/
-/* .pdf_seguridad{
-
-} */
 .pdf_row1{
     min-height: 243px;
 }

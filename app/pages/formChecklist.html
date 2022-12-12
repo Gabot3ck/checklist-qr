@@ -12,15 +12,51 @@
     <title>Checklist Flota EBG</title>
 </head>
 <body>
-    <header class="wrapper_header  bg-success d-flex justify-content-center" id="header">
-        <div class="header wrapper d-flex justify-content-around align-items-center">
-            <img src="../images/logo ebg small.png" alt="Logo EBG">
+    <header class="wrapper_header  d-flex justify-content-center" id="header">
+        <nav class="navbar wrapper">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="../images/logo ebg small.png" alt="Logo EBG"  class="d-inline-block align-text-center me-3">
+                    Checklist Flota EBG  
+                </a>
+
+                <button class="navbar-toggler d-flex align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link pb-0" aria-current="page" href="./docs.html">Ver registros</a>
+                            <button class="nav-link border-0" id="btnLogout">Cerrar sesión</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+        <!-- <div class="header wrapper d-flex justify-content-around align-items-center">
+
+            <nav class="navbar navbar-expand-md mx-auto navbar-light bg-light ">
+                <a class="navbar-brand" href="#header">
+                    <img src="../images/logo ebg small.png" alt="Logo EBG">
+                    <h1 class="text-center d-block h5" >Formulario de resgistro </h1>
+                </a>
+            </nav>  
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <a class="btn btn-warning" href="./docs.html">Ver resgistros</a>
+                <button class="btn btn-danger h-50 " id="btnLogout">Cerrar sesión</button>
+            </div>
             <div class="">
-                <h1 class="text-center d-block h5" >Formulario de resgistro </h1>
+                
                 <h2 class="text-center d-block h6">(Checklist de camiones)</h2>
             </div>
-            <button class="btn btn-danger h-50 " id="btnLogout">Cerrar sesión</button>
-        </div>
+            
+        </div> -->
     </header>
 
     
@@ -1241,7 +1277,6 @@
 <!--?       ******** Fin    Observaciones    ******** -->
                 <div class="col-md-10 mx-auto text-center">
                     <a class="btn btn-warning" href="#carroceria">Atrás</a>
-                    <a class="btn btn-warning" href="./docs.html">Ver resgistros</a>
                     <button class="btn btn-info"  id="enviarData">Enviar</button>
                 </div>
             </section>
