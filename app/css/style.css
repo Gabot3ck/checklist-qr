@@ -46,9 +46,7 @@ p{
     width: clamp(320px,100%,768px);
 }
 .btn_navegacion{
-    background-color:var(--color-principal);
-    background-color: #383838;
-    color: var(--color-secundario);
+    width: 125px;
 }
 /*TODO    H E A D E R    */
 .wrapper_header{
@@ -99,7 +97,7 @@ p{
     font-weight: 600;
 }
 .card_seguridad{
-    min-height: 550px;
+    min-height: 580px;
     background: var(--color-secundarioGlass);
     box-shadow: 0 8px 32px 0 var(--color-secundario);
     backdrop-filter: blur( 4px );
