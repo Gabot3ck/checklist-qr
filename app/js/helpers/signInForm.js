@@ -23,6 +23,10 @@ signInForm.addEventListener("submit", async (e) => {
             showMessage("La contraseña es incorrecta","error");
         } else if (error.code === "auth/user-not-found") {
             showMessage("Usuario no registrado o incorrecto");
+        } else if (error.code === "auth/invalid-email") {
+                showMessage("Ingrese su email");
+        }  else if (error.code === "auth/internal-error") {
+            showMessage("Ingrese su contraseña");
         } else {
             showMessage(error.message, "error");
         }
