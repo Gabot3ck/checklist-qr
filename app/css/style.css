@@ -48,6 +48,10 @@ p{
 .btn_navegacion{
     width: 125px;
 }
+.btn_enviar{
+    height: 24px;
+    width: 125px;
+}
 /*TODO    H E A D E R    */
 .wrapper_header{
 	width: 100%;
