@@ -183,13 +183,13 @@ p{
     background: var(--color-secundarioGlass);
 }
 .table_fecha{
-    width: 40%;
+    width: 50%;
 }
 .table_camion{
     width: 30%;
 }
 .table_ver{
-    width: 30%;
+    width: 20%;
 }
 .btn-pdf{
     color: antiquewhite;

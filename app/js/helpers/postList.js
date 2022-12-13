@@ -322,7 +322,7 @@ d.addEventListener("DOMContentLoaded", () => {
                                     </div>
                                 </div>
                                 
-                                <div class="modal-footer">
+                                <div class="modal-footer d-flex justify-content-end gap-3">
                                     <button type="button" class="btn btn-danger btn_navegacion" data-bs-dismiss="modal">Cerrar</button>
                                     <button type="button" class="btn btn-success btn_navegacion py-1" id=${el.id}>
                                         Descargar<i class="bi bi-filetype-pdf ms-2 fs-5"></i>
