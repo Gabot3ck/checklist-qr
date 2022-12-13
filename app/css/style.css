@@ -56,6 +56,10 @@ p{
     gap: .5rem;
     background-color: #DDDEDC;
 }
+.seccion_table{
+    position: relative;
+    margin-top: 70px;
+}
 .wrapper_spinner_table{
     position: absolute;
     top: 44px;
@@ -78,9 +82,7 @@ p{
     height: 24px;
     width: 125px;
 }
-.seccion_table{
-    position: relative;
-}
+
 /*TODO    H E A D E R    */
 .wrapper_header{
 	width: 100%;
