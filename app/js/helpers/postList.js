@@ -43,8 +43,8 @@ d.addEventListener("DOMContentLoaded", () => {
                     <div class="modal fade" id="Modal${index}" data-bs-backdrop="static" tabindex="-1" aria-labelledby="Modal mostrando los registros" aria-hidden="true">
                         <div class="modal-dialog modal-lg modal-dialog-scrollable">
                             <div class="modal-content">
-                                <div class="modal-header py-2">
-                                    <h5 class="modal-title" >Información del checklist</h5>
+                                <div class="modal-header py-2 bg-success text-light">
+                                    <h5 class="modal-title " >Información del checklist</h5>
                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
 
@@ -323,8 +323,8 @@ d.addEventListener("DOMContentLoaded", () => {
                                 </div>
                                 
                                 <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                                    <button type="button" class="btn btn-primary" id=${el.id}>
+                                    <button type="button" class="btn btn-danger btn_navegacion" data-bs-dismiss="modal">Cerrar</button>
+                                    <button type="button" class="btn btn-success btn_navegacion py-1" id=${el.id}>
                                         Descargar<i class="bi bi-filetype-pdf ms-2 fs-5"></i>
                                     </button>
                                 </div>
