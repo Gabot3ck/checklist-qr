@@ -23,9 +23,9 @@ const btnLogout = d.getElementById("btnLogout");
 
 window.onload = function (){
     const spinner = d.getElementById("spinner");
-    console.log("spinner");
     spinner.classList.add("ocultar");
 }
+
 
 onAuthStateChanged(auth, async (user) => {
     if (user) {

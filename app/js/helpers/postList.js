@@ -5,6 +5,11 @@ import { logout } from "./logout.js";
 
 const d= document;
 
+window.onload = function (){
+    const spinner = d.getElementById("spinner2");
+    spinner.classList.add("ocultar");
+}
+
 d.addEventListener("DOMContentLoaded", () => {
 
     const table = d.getElementById("tableData");
