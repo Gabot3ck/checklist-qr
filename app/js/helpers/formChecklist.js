@@ -27,6 +27,7 @@ window.onload = function (){
 }
 
 
+
 onAuthStateChanged(auth, async (user) => {
     if (user) {
         const docs = [];

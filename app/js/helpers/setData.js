@@ -1,6 +1,6 @@
 import { collection, doc, setDoc, onSnapshot, query, where, getDoc} from "https://www.gstatic.com/firebasejs/9.14.0/firebase-firestore.js";
 import { db } from "../db/firebase.js";
-
+import { showMessage } from "./showMessage.js";
 
 
 export const setData = () => {
@@ -139,7 +139,17 @@ export const setData = () => {
             setDoc(nuevoRegistro, {...registro, fecha:fecha, camion:data, conductor:conductor.data() });
         });
 
-        form.reset();
+        showMessage("Enviando Formulario...","exito");
+
+        setTimeout(() => {
+            showMessage("Envío exitoso","exito");
+            form.reset();
+            setTimeout(() => {
+                window.location = "../../index.html";
+            }, 1500 );
+        }, 2600);
+        
+        
     })
     
 }
