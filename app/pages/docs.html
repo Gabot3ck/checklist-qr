@@ -50,8 +50,9 @@
         </nav>.
     </header>
 
-    <section class="wrapper mx-auto py-3">
-        <table class="w-100 text-center " id="tableData">
+    <section class="wrapper mx-auto py-3 seccion_table">
+        
+        <table class="w-100 text-center" id="tableData">
             <tr class="pt-2 bg-dark text-light ">
                 <th class="table_fecha">Fecha</th>
                 <th class="table_camion">Camión</th>
@@ -59,6 +60,12 @@
                     Ver <i class="bi bi-eye-fill ms-1"></i>
                 </th>
             </tr>
+            <div class="wrapper_spinner_table" id="spinner3">
+                <div class="spinner-border text-success" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                </div>
+                <p class="text-success fs-5">Cargando...</p>
+            </div>
         </table>
     </section>
 

@@ -4,6 +4,7 @@ import { showModal } from "./showModal.js";
 import { logout } from "./logout.js";
 
 const d= document;
+const spinner3 = d.getElementById("spinner3");
 
 window.onload = function (){
     const spinner = d.getElementById("spinner2");
@@ -339,14 +340,16 @@ d.addEventListener("DOMContentLoaded", () => {
 
                 table.appendChild(tr);
 
+
                 let filename = `${el.camion.patente}-${el.fecha}`;
 
                 showModal(el.id, index, filename);
             })
+            spinner3.classList.add("ocultar");
         });
     }
 
     getData();
-
+    
 })
 
