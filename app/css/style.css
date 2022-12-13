@@ -82,6 +82,9 @@ p{
     height: 24px;
     width: 125px;
 }
+.btn_descarga{
+    width: 135px;
+}
 
 /*TODO    H E A D E R    */
 .wrapper_header{

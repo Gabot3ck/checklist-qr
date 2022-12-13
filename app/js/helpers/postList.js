@@ -329,8 +329,8 @@ d.addEventListener("DOMContentLoaded", () => {
                                 </div>
                                 
                                 <div class="modal-footer d-flex justify-content-end gap-3">
-                                    <button type="button" class="btn btn-danger btn_navegacion" data-bs-dismiss="modal">Cerrar</button>
-                                    <button type="button" class="btn btn-success btn_navegacion py-1" id=${el.id}>
+                                    <button type="button" class="btn btn-danger btn_descarga" data-bs-dismiss="modal">Cerrar</button>
+                                    <button type="button" class="btn btn-success btn_descarga py-1" id=${el.id}>
                                         Descargar<i class="bi bi-filetype-pdf ms-2 fs-5"></i>
                                     </button>
                                 </div>
