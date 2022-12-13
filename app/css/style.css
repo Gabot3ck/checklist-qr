@@ -55,7 +55,7 @@ p{
 /*TODO    H E A D E R    */
 .wrapper_header{
 	width: 100%;
-    height: 70px;
+    height: 78px;
 }
 .wrapper_header .header{
     position: fixed;
@@ -177,6 +177,29 @@ p{
 .textarea_display{
     display: none;
 }
+
+/*todo V E R      R E G I S T R O S     */
+.table_data{
+    background: var(--color-secundarioGlass);
+}
+.table_fecha{
+    width: 40%;
+}
+.table_camion{
+    width: 30%;
+}
+.table_ver{
+    width: 30%;
+}
+.btn-pdf{
+    color: antiquewhite;
+    background-color: var(--color-textoGlass);
+}
+.btn-pdf:hover{
+    color: antiquewhite;
+    background-color: var(--color-texto);
+}
+
 /*TODO     D O C    P D F     */
 /*? *-*-*  Header PDF *-*-*-*/
 .pdf_title{

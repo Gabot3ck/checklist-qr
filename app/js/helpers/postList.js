@@ -27,13 +27,14 @@ d.addEventListener("DOMContentLoaded", () => {
 
             docs.forEach( (el, index) => {
                 const tr = d.createElement("tr");
+                tr.classList.add("table_data");
                 tr.innerHTML = 
                     `<tr>
                         <td>${el.fecha}</td>
                         <td>${el.camion.patente}</td>
                         <td>
-                            <button  type="button" class="btn btn-info"  data-bs-toggle="modal" data-bs-target="#Modal${index}">
-                                <i class="bi bi-eye-fill"></i>
+                            <button  type="button" class="btn btn-pdf py-1 h-75"  data-bs-toggle="modal" data-bs-target="#Modal${index}">
+                                <i class="bi bi-file-earmark-pdf me-1"></i>PDF
                             </button>
                         </td>
                     </tr>
