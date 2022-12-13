@@ -41,6 +41,20 @@ li{
 }
 p{
     margin: 0;
+}.ocultar{
+    display: none !important;
+}
+.wrapper_spinner{
+    position: absolute;
+    z-index: 990;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: .5rem;
+    background-color: #DDDEDC;
 }
 .wrapper{
     width: clamp(320px,100%,768px);

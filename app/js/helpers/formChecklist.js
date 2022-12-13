@@ -17,8 +17,15 @@ const btnObsNiveles = d.getElementById("btnObsNiveles");
 const btnObsCarroceria = d.getElementById("btnObsCarroceria");
 const btnObsOtros = d.getElementById("btnObsOtros");
 const select = d.getElementById("patenteCamion");
-const btnLogout = document.getElementById("btnLogout");
+const btnLogout = d.getElementById("btnLogout");
 
+
+
+window.onload = function (){
+    const spinner = d.getElementById("spinner");
+    console.log("spinner");
+    spinner.classList.add("ocultar");
+}
 
 onAuthStateChanged(auth, async (user) => {
     if (user) {
