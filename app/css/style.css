@@ -7,7 +7,6 @@
     --color-texto: #383838;
     --color-textoGlass: #383838a9;
     --color-border: #dee2e6;
-    /* --fuente: 'Montserrat', sans-serif; */
 }
 
 
@@ -192,7 +191,7 @@ p{
 /*TODO     A U T E N T I C A C I Ó N      */
 .wrapperLogin{
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
