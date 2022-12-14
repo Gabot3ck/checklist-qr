@@ -85,6 +85,12 @@ p{
 .btn_descarga{
     width: 135px;
 }
+.bloqueado{
+    pointer-events: visible !important;
+	cursor: not-allowed !important;
+	opacity: 60%;
+}
+
 
 /*TODO    H E A D E R    */
 .wrapper_header{

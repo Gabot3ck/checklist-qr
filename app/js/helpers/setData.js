@@ -60,7 +60,8 @@ export const setData = () => {
             obsCarroceria = d.getElementById("obsCarroceria").value,
             obsOtros = d.getElementById("obsOtros").value;
 
-    
+
+
     const registro = {
         odometro: odometro,
         proyecto: proyecto,
@@ -147,9 +148,10 @@ export const setData = () => {
             setTimeout(() => {
                 window.location = "../../index.html";
             }, 1500 );
-        }, 2600);
+        }, 2500);
         
         
     })
+    
     
 }
