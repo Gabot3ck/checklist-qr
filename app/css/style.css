@@ -7,6 +7,7 @@
     --color-texto: #383838;
     --color-textoGlass: #383838a9;
     --color-border: #dee2e6;
+    --color-placeholder: #b4b4b4;
 }
 
 
@@ -43,6 +44,9 @@ li{
 }
 p{
     margin: 0;
+}
+.input_auth::placeholder{
+    color: var(--color-placeholder);
 }
 .foco{
     border: 1px solid red;
