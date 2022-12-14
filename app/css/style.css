@@ -95,7 +95,9 @@ p{
 	cursor: not-allowed !important;
 	opacity: 60%;
 }
-
+.label_auth{
+    color: var(--color-texto);
+}
 
 /*TODO    H E A D E R    */
 .wrapper_header{
