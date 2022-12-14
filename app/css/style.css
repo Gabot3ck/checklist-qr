@@ -41,7 +41,12 @@ li{
 }
 p{
     margin: 0;
-}.ocultar{
+}
+.foco{
+    border: 1px solid red;
+    box-shadow: 0 4px 32px 0 red;
+}
+.ocultar{
     display: none !important;
 }
 .wrapper_spinner{
