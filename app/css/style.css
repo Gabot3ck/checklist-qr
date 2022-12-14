@@ -7,6 +7,7 @@
     --color-texto: #383838;
     --color-textoGlass: #383838a9;
     --color-border: #dee2e6;
+    /* --fuente: 'Montserrat', sans-serif; */
 }
 
 
@@ -14,6 +15,7 @@
 html{
 	box-sizing: border-box;
 	font-size: 16px;
+    font-family: 'Roboto', sans-serif;
 }
 
 *,
@@ -27,6 +29,7 @@ body{
 	padding: 0;
 	width: 100%;
 	min-height: 100vh;
+    font-family: 'Roboto', sans-serif;
 	background: var(--color-texto);
     background-color: #65C400;
 	text-rendering: optimizeSpeed;
