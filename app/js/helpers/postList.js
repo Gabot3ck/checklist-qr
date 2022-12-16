@@ -56,7 +56,7 @@ d.addEventListener("DOMContentLoaded", () => {
 
 
                                 <div class="modal-body" id="${index}">
-                                    <div class="container-fluid">
+                                    <div class="container-fluid modal_cuerpo">
 
                                         <div class="row pdf_header">
                                             <div class="col-2 border text-center">
