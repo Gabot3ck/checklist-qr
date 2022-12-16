@@ -104,6 +104,44 @@ p{
 .label_auth{
     color: var(--color-texto);
 }
+/*TODO     A U T E N T I C A C I Ó N      */
+.wrapperLogin{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-secundario);
+}
+.wrapperLogin .form-label{
+    font-style: "Montserrat";
+    font-weight: 600;
+    color: var(--color-texto);
+}
+.login{
+    margin: 0 auto;
+    min-width: 360px;
+    width: 50vw;
+    max-width: 400px;
+    height: 600px;
+    gap: 3rem;
+}
+
+.logo_login{
+    width: clamp(30%, 80px, 450px);
+    height: 20%;
+}
+.form_login{
+    padding: .8rem;
+    width: 80%;
+    max-width: 380px;
+    height: 55%;
+    border-radius: 15px;
+    background-color:  var(--color-principal);
+}
+.textarea_display{
+    display: none;
+}
 
 /*TODO    H E A D E R    */
 .wrapper_header{
@@ -115,7 +153,6 @@ p{
 	top:0;
 	z-index: 999;
     height: 70px;
-    background-color: darkviolet;
 }
 .wrapper_header .navbar .container-fluid{
     background-color: var(--color-secundario);
@@ -127,6 +164,7 @@ p{
     width: 60px;
     height: 60px;
 }
+
 
 
 /*TODO    F O R M    R E G I S T R O    */
@@ -190,45 +228,6 @@ p{
 .form_otros{
     width: 90%;
     height: 100vh;
-}
-
-/*TODO     A U T E N T I C A C I Ó N      */
-.wrapperLogin{
-    width: 100%;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--color-secundario);
-}
-.wrapperLogin .form-label{
-    font-style: "Montserrat";
-    font-weight: 600;
-    color: var(--color-texto);
-}
-.login{
-    margin: 0 auto;
-    min-width: 360px;
-    width: 50vw;
-    max-width: 400px;
-    height: 600px;
-    gap: 3rem;
-}
-
-.logo_login{
-    width: clamp(30%, 80px, 450px);
-    height: 20%;
-}
-.form_login{
-    padding: .8rem;
-    width: 80%;
-    max-width: 380px;
-    height: 50%;
-    border-radius: 15px;
-    background-color:  var(--color-principal);
-}
-.textarea_display{
-    display: none;
 }
 
 /*todo V E R      R E G I S T R O S     */
