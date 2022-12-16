@@ -101,7 +101,7 @@ export const setData = () => {
         vidrios: vidrios,
         barraEstabilizadora: barraEstabilizadora,
         tablero: tablero,
-        odometro: odometro2,
+        odometro2: odometro2,
         plumillas: plumillas,
         seguroCabina: seguroCabina,
         radio: radio,

@@ -88,7 +88,7 @@ d.addEventListener("DOMContentLoaded", () => {
                                             <div class="col-6 d-flex flex-column border py-2">
                                                 <div class="d-flex w-100">
                                                     <p>FECHA:</p>
-                                                    <p>${el.fecha}</p>
+                                                    <p>${el.fecha.substring(0,10)}</p>
                                                 </div>
                                                 <div class="d-flex w-100" >
                                                     <p>PROYECTO:</p>
@@ -111,7 +111,7 @@ d.addEventListener("DOMContentLoaded", () => {
                                                 </div>
                                                 <div class="d-flex w-100" >
                                                     <p>CONDUCTOR:</p>
-                                                    <p>${el.conductor.nombre}</p>
+                                                    <p>${el.conductor.nombre} ${el.conductor.apellido}</p>
                                                 </div>
                                                 <div class="d-flex w-100" >
                                                     <p>KM ACTUAL:</p>
@@ -119,7 +119,7 @@ d.addEventListener("DOMContentLoaded", () => {
                                                 </div>
                                                 <div class="d-flex w-100" >
                                                     <p>KM MANTENCIÓN:</p>
-                                                    <p>${el.camion.km_mantencion}</p>
+                                                    <p>${ new Intl.NumberFormat('de-DE').format(el.camion.km_mantencion)} km</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -305,7 +305,7 @@ d.addEventListener("DOMContentLoaded", () => {
                                                     </div>
                                                     <div class="d-flex flex-column  align-items-start px-4">
                                                         <p>${el.tablero}</p>
-                                                        <p>${el.odometro}</p>
+                                                        <p>${el.odometro2}</p>
                                                         <p>${el.plumillas}</p>
                                                         <p>${el.seguroCabina}</p>
                                                         <p>${el.radio}</p>
@@ -320,7 +320,7 @@ d.addEventListener("DOMContentLoaded", () => {
                                             <div class="col-12 border pb-1 pt-2 pdf_card_footer">
                                                 <div class="w-100  text-start">
                                                     <h6 class="fw-bold pdf_title">OBSERVACIONES:</h6>
-                                                    <p>*${el.obsSeguridad} *${el.obsLuces} *${el.obsNeumaticos} *${el.obsNiveles} *${el.obsCarroceria} *${el.obsOtros}</p>
+                                                    <p>${el.obsSeguridad} ${el.obsLuces} ${el.obsNeumaticos} ${el.obsNiveles} ${el.obsCarroceria} ${el.obsOtros}</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -341,7 +341,7 @@ d.addEventListener("DOMContentLoaded", () => {
                 table.appendChild(tr);
 
 
-                let filename = `${el.camion.patente}-${el.fecha}`;
+                let filename = `${el.camion.patente}-${el.fecha.substring(0,19)}`;
 
                 showModal(el.id, index, filename);
             })
