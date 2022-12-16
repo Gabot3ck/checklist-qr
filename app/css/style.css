@@ -45,13 +45,13 @@ li{
 p{
     margin: 0;
 }
-.modal-dialog-scrollable .modal-body{
+/* .modal-dialog-scrollable .modal-body{
     max-width: 768px;
     overflow-x: auto !important;
 }
 .modal_cuerpo{
-    width: calc(595px - 2px);
-}
+    width: calc(590px - 2px);
+} */
 .input_auth::placeholder{
     color: var(--color-placeholder);
 }
