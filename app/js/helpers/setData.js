@@ -146,7 +146,7 @@ export const setData = () => {
             showMessage("Envío exitoso","exito");
             form.reset();
             setTimeout(() => {
-                window.location = "../docs.html";
+                window.location = "./docs.html";
             }, 1500 );
         }, 2500);
         
