@@ -115,7 +115,7 @@ d.addEventListener("DOMContentLoaded", () => {
                                                 </div>
                                                 <div class="d-flex w-100" >
                                                     <p>KM ACTUAL:</p>
-                                                    <p>${el.odometro}</p>
+                                                    <p>${ new Intl.NumberFormat('de-DE').format(el.odometro)} km</p>
                                                 </div>
                                                 <div class="d-flex w-100" >
                                                     <p>KM MANTENCIÓN:</p>
