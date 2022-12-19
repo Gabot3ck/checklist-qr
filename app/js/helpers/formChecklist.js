@@ -337,11 +337,11 @@ const validateForm = () => {
     perticaNA.addEventListener("click", validateForm);
 
 
-    spanBtnEnviar.addEventListener("click", (e) => {
-        if(btnEnviarData.hasAttribute("disabled")){
-            showMessage("Tiene una casilla sin marcar", "error");
-        }
-    } )
+    // spanBtnEnviar.addEventListener("click", (e) => {
+    //     if(btnEnviarData.hasAttribute("disabled")){
+    //         showMessage("Tiene una casilla sin marcar", "error");
+    //     }
+    // } )
 
     spanBtnEnviar.addEventListener("mousemove", (e) => {
         if(btnEnviarData.hasAttribute("disabled")){
