@@ -343,7 +343,7 @@ const validateForm = () => {
     //     }
     // } )
 
-    spanBtnEnviar.addEventListener("mousemove", (e) => {
+    spanBtnEnviar.addEventListener("mouseover", (e) => {
         if(btnEnviarData.hasAttribute("disabled")){
             showMessage("Tiene una casilla sin marcar", "error");
         }
