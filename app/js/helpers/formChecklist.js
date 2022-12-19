@@ -4,6 +4,7 @@ import { auth, db } from "../db/firebase.js";
 import { setData } from "./setData.js";
 import { addObs } from "./addObs.js";
 import { logout } from "./logout.js";
+import { showMessage } from "./showMessage.js";
 import "./logout.js";
 
 const d = document;
@@ -16,6 +17,7 @@ const btnObsCarroceria = d.getElementById("btnObsCarroceria");
 const btnObsOtros = d.getElementById("btnObsOtros");
 const select = d.getElementById("patenteCamion");
 const btnLogout = d.getElementById("btnLogout");
+const spanBtnEnviar = d.getElementById("spanBtnEnviar");
 
 const   camion = d.getElementById("patenteCamion"),
         odometro = d.getElementById("odometro"),
@@ -334,6 +336,18 @@ const validateForm = () => {
     perticaM.addEventListener("click", validateForm);
     perticaNA.addEventListener("click", validateForm);
 
+
+    spanBtnEnviar.addEventListener("click", (e) => {
+        if(btnEnviarData.hasAttribute("disabled")){
+            showMessage("Tiene una casilla sin marcar", "error");
+        }
+    } )
+
+    spanBtnEnviar.addEventListener("mousemove", (e) => {
+        if(btnEnviarData.hasAttribute("disabled")){
+            showMessage("Tiene una casilla sin marcar", "error");
+        }
+    } )
 
 onAuthStateChanged(auth, async (user) => {
     if (user) {
