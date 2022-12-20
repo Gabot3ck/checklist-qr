@@ -18,11 +18,15 @@ d.addEventListener("DOMContentLoaded", () => {
     const btnLogout2 = d.getElementById("btnLogout2");
     logout(btnLogout2);
 
+    // const buscador = d.getElementById("buscador");
+
+
 
 //todo   Función que obtiene los datos de Firestore
     const   getData = async () => {
         
         const q = query(collection(db, "registros"), orderBy("fecha", "desc"));
+
         const docs = [];
 
         onSnapshot(q, (querySnapshot) => {
@@ -30,6 +34,7 @@ d.addEventListener("DOMContentLoaded", () => {
             querySnapshot.forEach((doc) => {
                 docs.push({...doc.data(), id:doc.id});
             });
+
 
             docs.forEach( (el, index) => {
                 const tr = d.createElement("tr");
@@ -346,6 +351,18 @@ d.addEventListener("DOMContentLoaded", () => {
                 showModal(el.id, index, filename);
             })
             spinner3.classList.add("ocultar");
+
+//todo  *****   Función del buscador
+            d.addEventListener("keyup",  e => {
+                if(e.target.matches("#buscador")){
+                    d.querySelectorAll(".table_data").forEach(el => {
+                        el.textContent.toLowerCase().includes(e.target.value.toLowerCase())
+                        ? el.classList.remove("ocultar")
+                        : el.classList.add("ocultar");
+                    })
+
+                }
+            })
         });
     }
 
