@@ -59,6 +59,7 @@ p{
     border: 1px solid red;
     box-shadow: 0 4px 32px 0 red;
 }
+
 .ocultar{
     display: none !important;
 }
@@ -258,6 +259,7 @@ p{
     color: antiquewhite;
     background-color: var(--color-texto);
 }
+
 
 /*TODO     D O C    P D F     */
 /*? *-*-*  Header PDF *-*-*-*/
