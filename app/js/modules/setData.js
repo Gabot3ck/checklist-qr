@@ -1,6 +1,6 @@
 import { collection, doc, setDoc, onSnapshot, query, where, getDoc} from "https://www.gstatic.com/firebasejs/9.14.0/firebase-firestore.js";
 import { db } from "../db/firebase.js";
-import { showMessage } from "./showMessage.js";
+import { showMessage } from "../helpers/showMessage.js";
 
 
 export const setData = () => {

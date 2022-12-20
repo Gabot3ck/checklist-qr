@@ -2,10 +2,10 @@ import { onAuthStateChanged } from "https://www.gstatic.com/firebasejs/9.14.0/fi
 import { collection, onSnapshot} from "https://www.gstatic.com/firebasejs/9.14.0/firebase-firestore.js";
 import { auth, db } from "../db/firebase.js";
 import { setData } from "./setData.js";
-import { addObs } from "./addObs.js";
-import { logout } from "./logout.js";
-import { showMessage } from "./showMessage.js";
-import "./logout.js";
+import { addObs } from "../helpers/addObs.js";
+import { logout } from "../helpers/logout.js";
+import { showMessage } from "../helpers/showMessage.js";
+import "../helpers/logout.js";
 
 const d = document;
 const btnEnviarData = d.getElementById("enviarData");

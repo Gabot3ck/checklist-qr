@@ -1,1 +1,1 @@
-import "./helpers/signInForm.js";
+import "./modules/signInForm.js";

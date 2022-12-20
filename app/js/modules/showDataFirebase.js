@@ -1,7 +1,7 @@
 import { collection, onSnapshot, doc, query, orderBy} from "https://www.gstatic.com/firebasejs/9.14.0/firebase-firestore.js";
 import { db } from "../db/firebase.js";
-import { showModal } from "./showModal.js";
-import { logout } from "./logout.js";
+import { showModal } from "../helpers/showModal.js";
+import { logout } from "../helpers/logout.js";
 
 const d= document;
 const spinner3 = d.getElementById("spinner3");
@@ -17,8 +17,6 @@ d.addEventListener("DOMContentLoaded", () => {
 
     const btnLogout2 = d.getElementById("btnLogout2");
     logout(btnLogout2);
-
-    // const buscador = d.getElementById("buscador");
 
 
 
