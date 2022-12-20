@@ -79,18 +79,6 @@ p{
     position: relative;
     margin-top: 70px;
 }
-.wrapper_spinner_table{
-    position: absolute;
-    top: 44px;
-    width: 100%;
-    height: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: .5rem;
-    background-color: #DDDEDC;
-}
 .wrapper{
     width: clamp(320px,100%,768px);
 }
@@ -238,7 +226,7 @@ p{
     height: 100vh;
 }
 
-/*todo V E R      R E G I S T R O S     */
+/*todo   V E R      R E G I S T R O S     */
 .table_data{
     background: var(--color-secundarioGlass);
 }
@@ -262,6 +250,21 @@ p{
 #buscador:focus{
     border: 2px solid var(--color-textoGlass);
     box-shadow: 0 4px 32px 0 var(--color-textoGlass);
+}
+#buscador::placeholder{
+    color: var(--color-placeholder);
+}
+.wrapper_spinner_table{
+    position: absolute;
+    top: 84px;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: .5rem;
+    background-color: #DDDEDC;
 }
 
 
