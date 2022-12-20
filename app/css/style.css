@@ -259,6 +259,10 @@ p{
     color: antiquewhite;
     background-color: var(--color-texto);
 }
+#buscador:focus{
+    border: 2px solid var(--color-textoGlass);
+    box-shadow: 0 4px 32px 0 var(--color-textoGlass);
+}
 
 
 /*TODO     D O C    P D F     */
