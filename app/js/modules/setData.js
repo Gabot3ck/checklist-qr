@@ -119,7 +119,7 @@ export const setData = () => {
 
         const idUser = JSON.parse(localStorage.getItem("idUser"));
 
-        const fecha = moment().format('DD-MM-YYYY hh:mm:ss a');
+        const fecha = moment().format('YYYY-MM-DD HH:mm:ss');
 
         const docs = [];
 

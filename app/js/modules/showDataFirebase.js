@@ -19,7 +19,6 @@ d.addEventListener("DOMContentLoaded", () => {
     logout(btnLogout2);
 
 
-
 //todo   Función que obtiene los datos de Firestore
     const   getData = async () => {
         
