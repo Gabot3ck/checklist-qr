@@ -56,7 +56,7 @@
     
 <!--?    SECCION     DEL    FORMULARIO -->
     <main class="wrapper mx-auto ">
-        <form action="" class="row  mx-auto mt-0" id="formChecklist" autoComplete="off">
+        <form action="" class="row mx-auto mt-0" id="formChecklist" autoComplete="off">
 
             <section class="form_registro d-flex flex-column justify-content-center gap-5 mx-auto" id="datosUser">
                 <div class="w-100 card_datos d-flex flex-column justify-content-evenly" >
@@ -1334,6 +1334,13 @@
             </section>
 <!--todo *-*-*-*-*-*-*-*-*-*  F  I  N        O T R O S    *-*-*-*-*-*-*-*-*-*-->
         </form>
+
+        <script type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+        </script>
+
+        <script type="text/javascript">emailjs.init('OQL1F1RMUMihmP-q5')
+        </script>
     </main>
 
 
@@ -1348,6 +1355,19 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
     <!--?     script --> 
     <script src="../js/modules/formChecklist.js" type="module"></script>
+
+    <script>
+        const btn = document.getElementById('enviarData');
+
+        document.getElementById('formChecklist').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            const serviceID = 'default_service';
+            const templateID = 'template_wczh5uk';
+
+            emailjs.sendForm(serviceID, templateID, this)
+        });
+    </script>
     
 </body>
 </html>
