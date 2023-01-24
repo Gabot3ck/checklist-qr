@@ -138,6 +138,8 @@ export const setData = () => {
             const nuevoRegistro = doc(collection(db, "registros"));
 
             setDoc(nuevoRegistro, {...registro, fecha:fecha, camion:data, conductor:conductor.data() });
+
+            
         });
 
         showMessage("Enviando Formulario...","exito");

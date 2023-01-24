@@ -361,6 +361,7 @@ onAuthStateChanged(auth, async (user) => {
                 select.appendChild(option);
             });
         })
+
         btnEnviarData.addEventListener("click", () => setData());
         
         logout(btnLogout);

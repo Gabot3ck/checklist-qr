@@ -262,6 +262,13 @@ p{
     gap: .5rem;
     background-color: #DDDEDC;
 }
+.input_oculto,
+.input_oculto:hover
+{
+    border: none;
+    background: transparent;
+    color: var(--color-principal);
+}
 
 
 /*TODO     D O C    P D F     */

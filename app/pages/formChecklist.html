@@ -1333,6 +1333,7 @@
                 </div>
             </section>
 <!--todo *-*-*-*-*-*-*-*-*-*  F  I  N        O T R O S    *-*-*-*-*-*-*-*-*-*-->
+            <input id="nombreConductor" name="nombreConductor" readonly></input>
         </form>
 
         <script type="text/javascript"
@@ -1355,16 +1356,20 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
     <!--?     script --> 
     <script src="../js/modules/formChecklist.js" type="module"></script>
+    <script src="../js/helpers/getDataConductor.js" type="module"></script>
 
     <script>
         const btn = document.getElementById('enviarData');
+        const label = document.getElementById('nombreConductor');
+        const conductor = JSON.parse(localStorage.getItem("conductor"));
+        label.classList.add("input_oculto")
+        label.value = conductor;
 
         document.getElementById('formChecklist').addEventListener('submit', function(event) {
             event.preventDefault();
 
             const serviceID = 'default_service';
             const templateID = 'template_wczh5uk';
-
             emailjs.sendForm(serviceID, templateID, this)
         });
     </script>
