@@ -1336,6 +1336,8 @@
             <input id="nombreConductor" name="nombreConductor" readonly></input>
         </form>
 
+
+        <!-- Scripst de la API emailsjs para envío de correo -->
         <script type="text/javascript"
             src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
         </script>
@@ -1357,22 +1359,7 @@
     <!--?     script --> 
     <script src="../js/modules/formChecklist.js" type="module"></script>
     <script src="../js/helpers/getDataConductor.js" type="module"></script>
-
-    <script>
-        const btn = document.getElementById('enviarData');
-        const label = document.getElementById('nombreConductor');
-        const conductor = JSON.parse(localStorage.getItem("conductor"));
-        label.classList.add("input_oculto")
-        label.value = conductor;
-
-        document.getElementById('formChecklist').addEventListener('submit', function(event) {
-            event.preventDefault();
-
-            const serviceID = 'default_service';
-            const templateID = 'template_wczh5uk';
-            emailjs.sendForm(serviceID, templateID, this)
-        });
-    </script>
+    <script src="../js/helpers/setEmail.js"></script>
     
 </body>
 </html>
