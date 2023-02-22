@@ -365,5 +365,8 @@ p{
 .pdf_card_footer p{
     font-size: .8rem;
 }
+.btn_nav{
+    text-decoration: underline;
+}
 
 

@@ -5,6 +5,10 @@ import { logout } from "../helpers/logout.js";
 
 const d= document;
 const spinner3 = d.getElementById("spinner3");
+const btnPrev = d.getElementById("btnPrev");
+const btnNext = d.getElementById("btnNext");
+
+
 
 window.onload = function (){
     const spinner = d.getElementById("spinner2");
