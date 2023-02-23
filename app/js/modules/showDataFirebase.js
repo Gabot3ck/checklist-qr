@@ -1,12 +1,12 @@
-import { collection, onSnapshot, doc, query, orderBy} from "https://www.gstatic.com/firebasejs/9.14.0/firebase-firestore.js";
+import { collection, onSnapshot, query, orderBy, limit} from "https://www.gstatic.com/firebasejs/9.14.0/firebase-firestore.js";
 import { db } from "../db/firebase.js";
 import { showModal } from "../helpers/showModal.js";
 import { logout } from "../helpers/logout.js";
 
 const d= document;
 const spinner3 = d.getElementById("spinner3");
-const btnPrev = d.getElementById("btnPrev");
-const btnNext = d.getElementById("btnNext");
+
+
 
 
 
@@ -15,7 +15,7 @@ window.onload = function (){
     spinner.classList.add("ocultar");
 }
 
-d.addEventListener("DOMContentLoaded", () => {
+d.addEventListener("DOMContentLoaded", async () => {
 
     const table = d.getElementById("tableData");
 
@@ -26,7 +26,7 @@ d.addEventListener("DOMContentLoaded", () => {
 //todo   Función que obtiene los datos de Firestore
     const   getData = async () => {
         
-        const q = query(collection(db, "registros"), orderBy("fecha", "desc"));
+        const q = query(collection(db, "registros"), orderBy("fecha", "desc"), limit(15));
 
         const docs = [];
 
@@ -35,7 +35,6 @@ d.addEventListener("DOMContentLoaded", () => {
             querySnapshot.forEach((doc) => {
                 docs.push({...doc.data(), id:doc.id});
             });
-
 
             docs.forEach( (el, index) => {
                 const tr = d.createElement("tr");
@@ -353,7 +352,7 @@ d.addEventListener("DOMContentLoaded", () => {
             })
             spinner3.classList.add("ocultar");
 
-//todo  *****   Función del buscador
+// //todo  *****   Función del buscador
             d.addEventListener("keyup",  e => {
                 if(e.target.matches("#buscador")){
                     d.querySelectorAll(".table_data").forEach(el => {
@@ -366,8 +365,9 @@ d.addEventListener("DOMContentLoaded", () => {
             })
         });
     }
-
     getData();
-    
+
+
+
 })
 
