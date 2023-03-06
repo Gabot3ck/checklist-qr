@@ -1,4 +1,4 @@
-import { collection, doc, setDoc, onSnapshot, query, where, getDoc} from "https://www.gstatic.com/firebasejs/9.14.0/firebase-firestore.js";
+import { collection, doc, setDoc, onSnapshot, query, where, getDoc, updateDoc , getDocs} from "https://www.gstatic.com/firebasejs/9.14.0/firebase-firestore.js";
 import { db } from "../db/firebase.js";
 import { showMessage } from "../helpers/showMessage.js";
 
@@ -114,7 +114,9 @@ export const setData = () => {
         obsOtros: obsOtros,
     }
 
-    form.addEventListener("submit",  (e) => {
+    
+
+    form.addEventListener("submit",  async (e) => {
         e.preventDefault();
 
         const idUser = JSON.parse(localStorage.getItem("idUser"));
@@ -125,6 +127,29 @@ export const setData = () => {
 
         const q = query(collection(db, "camiones"), where("patente", "==", camion));
 
+
+        //Se actualiza el odómetro del camión
+
+        // getDocs(q)
+        //     .then((querySnapshot) => {
+        //         querySnapshot.forEach((doc) => {
+        //             localStorage.setItem("idCamion", JSON.stringify(doc.id))
+        //         });
+        //     })
+        //     .then(() => {
+        //         const kmActual = doc(db, "camiones", JSON.parse(localStorage.getItem("idCamion")))
+        //         updateDoc(kmActual, { km_actual: odometro} )
+        //     })
+        //     .catch(error => console.log(error))
+
+
+        // onSnapshot(q, async (querySnapshot) => {
+        //     querySnapshot.forEach( doc => localStorage.setItem("idCamion", JSON.stringify(doc.id)))
+        //     const kmActual = doc(db, "camiones", JSON.parse(localStorage.getItem("idCamion")))
+        //     updateDoc(kmActual, { km_actual: odometro} )
+        // })
+
+        //Se obtiene data de firebase
         onSnapshot(q, async (querySnapshot) => {
 
             querySnapshot.forEach((doc) => {

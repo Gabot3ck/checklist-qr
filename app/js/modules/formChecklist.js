@@ -1,5 +1,5 @@
 import { onAuthStateChanged } from "https://www.gstatic.com/firebasejs/9.14.0/firebase-auth.js";
-import { collection, onSnapshot} from "https://www.gstatic.com/firebasejs/9.14.0/firebase-firestore.js";
+import { collection, onSnapshot, where, query, getDocs } from "https://www.gstatic.com/firebasejs/9.14.0/firebase-firestore.js";
 import { auth, db } from "../db/firebase.js";
 import { setData } from "./setData.js";
 import { addObs } from "../helpers/addObs.js";
@@ -158,6 +158,7 @@ const disabledBtnEnviar = () => {
     btnEnviarData.disabled = true;
     btnEnviarData.classList.add("bloqueado");
 }
+
 
 const validateForm = () => {
     if  (camion.value !== "" &&
@@ -362,9 +363,17 @@ onAuthStateChanged(auth, async (user) => {
             });
         })
 
-        //Se envía a Local Storage la patente del camión
+        //Se envía a Local Storage el ID del camión
         select.addEventListener("change", () => {
-            localStorage.setItem("camion", JSON.stringify(select.value));
+            const q = query(collection(db, "camiones"), where("patente", "==", camion.value));
+
+            getDocs(q)
+            .then((querySnapshot) => {
+                querySnapshot.forEach((doc) => {
+                    localStorage.setItem("idCamion", JSON.stringify(doc.id))
+                });
+            })
+            .catch(error => console.log(error))
         })
         
         btnEnviarData.addEventListener("click", () => setData());
