@@ -82,7 +82,7 @@ d.addEventListener("DOMContentLoaded", async () => {
                                                         <p class="text-center ">PERIODO ENTRE MANTENCIONES</p>
                                                     </div>
                                                     <div class="km_valor"  >
-                                                        <p class="text-center ">CADA <br> 5.000 KM</p>
+                                                        <p class="text-center ">CADA <br>${el.camion.ciclo_mantencion ?   new Intl.NumberFormat('de-DE').format(el.camion.ciclo_mantencion) : new Intl.NumberFormat('de-DE').format(20000)} KM</p>
                                                     </div>
                                                 </div>
                                             </div>
