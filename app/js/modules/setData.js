@@ -127,31 +127,13 @@ export const setData = () => {
 
         const q = query(collection(db, "camiones"), where("patente", "==", camion));
 
-
         //Se actualiza el odómetro del camión
+        const kmActual = doc(db, "camiones", JSON.parse(localStorage.getItem("idCamion")))
+        updateDoc(kmActual, { km_actual: odometro} )
 
-        // getDocs(q)
-        //     .then((querySnapshot) => {
-        //         querySnapshot.forEach((doc) => {
-        //             localStorage.setItem("idCamion", JSON.stringify(doc.id))
-        //         });
-        //     })
-        //     .then(() => {
-        //         const kmActual = doc(db, "camiones", JSON.parse(localStorage.getItem("idCamion")))
-        //         updateDoc(kmActual, { km_actual: odometro} )
-        //     })
-        //     .catch(error => console.log(error))
-
-
-        // onSnapshot(q, async (querySnapshot) => {
-        //     querySnapshot.forEach( doc => localStorage.setItem("idCamion", JSON.stringify(doc.id)))
-        //     const kmActual = doc(db, "camiones", JSON.parse(localStorage.getItem("idCamion")))
-        //     updateDoc(kmActual, { km_actual: odometro} )
-        // })
 
         //Se obtiene data de firebase
         onSnapshot(q, async (querySnapshot) => {
-
             querySnapshot.forEach((doc) => {
                 docs.push({...doc.data()});
             });
