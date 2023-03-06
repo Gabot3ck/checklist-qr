@@ -362,6 +362,11 @@ onAuthStateChanged(auth, async (user) => {
             });
         })
 
+        //Se envía a Local Storage la patente del camión
+        select.addEventListener("change", () => {
+            localStorage.setItem("camion", JSON.stringify(select.value));
+        })
+        
         btnEnviarData.addEventListener("click", () => setData());
         
         logout(btnLogout);
