@@ -7,9 +7,6 @@ const d= document;
 const spinner3 = d.getElementById("spinner3");
 
 
-
-
-
 window.onload = function (){
     const spinner = d.getElementById("spinner2");
     spinner.classList.add("ocultar");
@@ -26,7 +23,7 @@ d.addEventListener("DOMContentLoaded", async () => {
 //todo   Función que obtiene los datos de Firestore
     const   getData = async () => {
         
-        const q = query(collection(db, "registros"), orderBy("fecha", "desc"), limit(15));
+        const q = query(collection(db, "registros"), orderBy("fecha", "desc"));
 
         const docs = [];
 
@@ -352,7 +349,7 @@ d.addEventListener("DOMContentLoaded", async () => {
             })
             spinner3.classList.add("ocultar");
 
-// //todo  *****   Función del buscador
+//todo  *****   Función del buscador
             d.addEventListener("keyup",  e => {
                 if(e.target.matches("#buscador")){
                     d.querySelectorAll(".table_data").forEach(el => {
